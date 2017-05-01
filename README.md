@@ -1,21 +1,28 @@
 # AcousticBrainz Genre Task 2017: Content-based music genre recognition from multiple sources
 ## Announcements
+- May 1: We are almost ready to release development and testing datasets within a few days!
 
 ## Task schedule
-- Development and testing datasets will be released on May 1, 2017
+- **Development and testing datasets will be released on May 1, 2017**
 - Baseline approach will be released on May 15, 2017
+- May-Mid-August: Work on algorithms
+- Mid-August: Submit runs
+    - 14 August: Run submission
+    - 21 August: Results returned to participants
+- Early September: Working notes paper due
+- 13-15 September MediaEval 2017 Workshop in Dublin
  
 ## Task description
 This task invites participants to predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings. We provide a training set of such audio features taken from the AcousticBrainz database and genre and subgenre labels from four different music metadata websites. The taxonomies that we provide for each website vary in their specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions for a test set. Participants can choose to consider each set of genre annotations individually or take advantage of combining sources together.
 
-See complete task description: http://www.multimediaeval.org/mediaeval2017/acousticbrainz/index.html
+See the complete task description here: http://www.multimediaeval.org/mediaeval2017/acousticbrainz/index.html
 
 
 <Short description of the task aimed at telling the participants exactly what they much do. Please state here that only five runs are permitted, and let the participants know if there are particular “required” runs (and what these require)>
  
 ## Data
 ### Genre annotations
-We provide for datasets containing genre/subgenre annotations extracted from different online metadata sources:
+We provide four datasets containing genre/subgenre annotations extracted from different online metadata sources:
 
 - Discogs (community-built database of editorial metadata) 730,849 recordings, ~1.6 genre tags per recording
 - AllMusic (online music database with annotations by expert editorial staff) 789,423 recordings, ~1.3 genres per recording, ~3 subgenres per recording
@@ -53,14 +60,14 @@ Music features provided in the json files are grouped into categories, low-level
 ## Development Data
 <Add the directions on how to access the development data.>
  
-Test Data
+## Test Data
 <When the test set is released, and the directions on how to access the test set.>
  
 ## Evaluation Methodology and Metrics
 
 For evaluation, we will use standard measures for classification adapted to our setting. The task is multi-label and it uses a two-level hierarchy, so we will mainly employ hierarchical versions of Precision (hP), Recall (hR) and F-measure (hF). In particular, for each track we will compute hP, hR and hF of the predicted genres, which will be macro-averaged (hF will be the main evaluation measure). This will allow us study expected performance for a new track. In addition, for each genre we will compute binary (non-hierarchical) P, R and F of the tracks for which the genre was predicted, again macro-averaging. This will allow us to study possible biases across genres.
 
-Evaluation script will be published on May 1, 2017.
+The evaluation script will be published on in the first week of May, 2017.
 
 <Add the exact information about how the task will be evaluated. Participants need to know exactly how their runs will be ranked.>
  
