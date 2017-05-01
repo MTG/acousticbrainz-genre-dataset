@@ -13,13 +13,30 @@
 - 13-15 September MediaEval 2017 Workshop in Dublin
  
 ## Task description
-This task invites participants to predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings. We provide a training set of such audio features taken from the AcousticBrainz database and genre and subgenre labels from four different music metadata websites. The taxonomies that we provide for each website vary in their specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions for a test set. Participants can choose to consider each set of genre annotations individually or take advantage of combining sources together.
+This task invites participants to predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings. We provide a training set of such audio features taken from the AcousticBrainz database and genre and subgenre labels from four different music metadata websites. The taxonomies that we provide for each website vary in their specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions for a test set. 
+
+The models will be evaluated in two subtasks:
+- Subtask 1: consider each set of genre annotations individually to generate predictions
+- Subtask 2: combine sources together to generate predictions
+
+Participants will first consider each set of genre annotations individually (Subtask1) and then take advantage of combining sources together (Subtask 2).
 
 See the complete task description here: http://www.multimediaeval.org/mediaeval2017/acousticbrainz/index.html
 
 
-<Short description of the task aimed at telling the participants exactly what they much do. Please state here that only five runs are permitted, and let the participants know if there are particular “required” runs (and what these require)>
- 
+The task has two sub-tasks. In both tasks participants must create a system that uses provided music features as an input and predicts genre labels as an output.
+
+**Subtask 1: Single-source Classification.** This subtask will explore conventional systems each one trained on a single dataset. Participants will submit predictions for the test set of each dataset separately, following their respective class spaces (genres and subgenres). These predictions will be produced by a separate system for each dataset, trained without any information from the other sources.
+![alt text](http://www.multimediaeval.org/mediaeval2017/acousticbrainz/files/page95-ab_subtask1.jpg)
+
+**Subtask 2: Multi-source Classification.**
+This subtask will explore how to combine several ground-truth sources to create a classification system. We will provide the same four test sets, each created from one of the four data sources. Participants will submit predictions for each test set separately, again following each corresponding genre class space. Predictions may be produced by a single system for all datasets or by one system for each dataset. Participants are free to make their own decision, however, about how to combine the training data/ground truth. 
+![alt text](http://www.multimediaeval.org/mediaeval2017/acousticbrainz/files/page95-ab_subtask2.jpg)
+
+Participants are expected to submit predictions for both subtasks. If they only want to work on the first subtask, they should submit the same predictions for the second subtask. We allow only five evaluation runs. 
+In every single run, participants should submit predictions for both Subtask1 and Subtask2 in two separate files. 
+
+
 ## Data
 ### Genre annotations
 We provide four datasets containing genre/subgenre annotations extracted from different online metadata sources:
