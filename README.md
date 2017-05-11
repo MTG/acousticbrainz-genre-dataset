@@ -3,7 +3,7 @@
 - May 11: It took us extra time to process and organize our very large amounts of data. We are almost ready to release development and testing datasets within a few days!
 
 ## Task schedule
-- **Development and testing datasets will be released on May 15, 2017**
+- **We expect to release development and testing datasets on May 15, 2017**
 - June: Release of a baseline approach
 - May-Mid-August: Work on algorithms
 - Mid-August: Submit runs
@@ -13,30 +13,28 @@
 - 13-15 September MediaEval 2017 Workshop in Dublin
  
 ## Task description
-This task invites participants to predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings. We provide a training set of such audio features taken from the AcousticBrainz database and genre and subgenre labels from four different music metadata websites. The taxonomies that we provide for each website vary in their specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions of genre and subgenre labels for a test set. 
+This task invites participants to **predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings**. We provide a training set of such audio features taken from the [AcousticBrainz](http://acousticbrainz.org/) database together with **four different ground truths of genre and subgenre labels**. These genre datasets were created using as a source four different music metadata websites. Their genre taxonomies vary in namespaces, specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions of genre and subgenre labels for a test set.
 
-Participants will be given four development datasets. All proposed models will be evaluated on four testing datasets in two subtasks:
+Participants will be given four development datasets (features + genre ground truths). All proposed models will be evaluated on four testing datasets. The goal is to create a system that uses provided music features as an input and predicts genre and subgenre labels, following genre taxonomy of each testing dataset, as an output.
 
-- Subtask 1: consider each set of genre annotations individually to generate predictions. This subtask serves as a baseline for Subtask 2.
-- Subtask 2: combine sources together to generate predictions
+The task includes two subtasks:
 
-Participants are expected to create models and submit their predictions for both subtasks. In the case they only want to work on Subtask 1, the same predictions will be used for evaluation in the subtask 2.
+- Subtask 1: consider each genre ground truth individually to generate predictions for the four testing datasets. This subtask will serve as a baseline for Subtask 2.
+- Subtask 2: combine genre ground truths together to generate predictions for the four testing datasets.
 
+Participants are expected to create models and submit their predictions for both subtasks. In the case they only want to work on Subtask 1, the same predictions will be used for evaluation in the Subtask 2. 
 
-In both tasks participants must create a system that uses provided music features as an input and predicts genre labels as an output.
+Below is a detailed description of the subtasks.
 
 **Subtask 1: Single-source Classification.** 
-This subtask will explore conventional systems each one trained on a single dataset. Participants will submit predictions for the test set of each dataset separately, following their respective class spaces (genres and subgenres). These predictions will be produced by a separate system for each dataset, trained without any information from the other sources.
+This subtask will explore conventional systems each one trained on a single grount-truth dataset. Participants will submit predictions for the test set of each dataset separately, following their respective class spaces (genres and subgenres). These predictions will be produced by a separate system for each dataset, trained without any information from the other sources.
 
 ![alt text](img/ab_subtask1.jpeg)
 
 **Subtask 2: Multi-source Classification.**
-This subtask will explore how to combine several ground-truth sources to create a classification system. We will provide the same four test sets, each created from one of the four data sources. Participants will submit predictions for each test set separately, again following each corresponding genre class space. Predictions may be produced by a single system for all datasets or by one system for each dataset. Participants are free to make their own decision, however, about how to combine the training data/ground truth.
+This subtask will explore how to combine several ground-truth sources to create a classification system. We will use the same four test sets, each created from one of the four data sources. Participants will submit predictions for each test set separately, again following each corresponding genre class space. Predictions may be produced by a single system for all datasets or by one system for each dataset. Participants are free to make their own decision, however, about how to combine the training data/ground truth.
 
 ![alt text](img/ab_subtask2.jpeg)
-
-Participants are expected to submit predictions for both subtasks. If they only want to work on the first subtask, they should submit the same predictions for the second subtask. We allow only five evaluation runs. 
-In every single run, participants should submit predictions for both Subtask1 and Subtask2 in two separate files. 
 
 
 ## Data
@@ -45,7 +43,7 @@ We provide four datasets containing genre/subgenre annotations extracted from fo
 
 Two of our datasets (**AllMusic** and **Discogs**) are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre namespace and taxonomy. We propagated release-level annotations to recordings (tracks) in AcousticBrainz to build our datasets. 
 
-Two other datasets (**Lastfm** and **Tagtraum**) are based on collaborative music tagging platforms with large amounts of genre labels provided by their users. We have automatically inferred genre/subgenre taxonomy and annotations from these tags following the algorithm proposed in [6] and a manual post-processing.
+Two other datasets (**Lastfm** and **Tagtraum**) are based on collaborative music tagging platforms with large amounts of genre labels provided by their users to characterise music recordings. We have automatically inferred genre/subgenre taxonomy and annotations from these tags following the algorithm proposed in [6] and a manual post-processing.
 
 Importantly, annotations in the datasets are multi-label. There may be multiple genre and subgenre annotations for the same music recording. It it guaranteed that each recording has at least one genre label, while subgenres are not always present.
 
@@ -106,10 +104,18 @@ The ground truth does not necessarily contain subgenre annotations for some reco
  
 ## Run submission
 
-Submissions should follow the same genre annotation format (see Data section)
+Participants are expected to submit predictions for both subtasks. **If they only want to work on the first subtask, they should submit the same predictions for the second subtask**. We allow only five evaluation runs (each run includes both subtasks). In every single run, participants should submit predictions for both Subtask1 and Subtask2 in two separate files. 
 
-<Please specify the format in which the run submission file should be created. Later, here you will also add the official instructions on run submission on Github, which are still being created.>
- 
+Submission format: to be announced. Each submission should include four TSV files for Subtask1 (one file for each testing dataset) and four TSV files for Subtask2. Submissions should follow a format similar to genre ground truth format (see Data section):
+
+```
+[RecordingID] [genre or subgenre label] ...
+```
+
+Each line in a TSV corresponds to an anonymized RecordingID from a testing dataset and should **include explicitly all predicted genre and subgenre labels**. 
+
+Participants can ensure their submission format is correct running the provided evaluation script. 
+
  
 ## Working Notes and Overview Paper
 Please follow the general instructions for the working notes paper. Remember to cite the task overview paper in your working notes paper. A draft version of that paper is available here: <Link to be added when the test data is released>
