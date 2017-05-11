@@ -141,8 +141,6 @@ Please follow the general instructions for the working notes paper. Remember to 
 ## Acknowledgments
 [AcousticBrainz](https://acousticbrainz.org/) and [Audio Commons](http://audiocommons.org/)
 
-![alt text](img/audio-commons-icon_64px.jpg)
+![alt text](img/audio-commons-icon_64px.jpg)    <img src="img/acousticbrainz_logo_short_horizontal.png" height="64">
 
-![alt text](img/acousticbrainz_logo_short_horizontal.png)
-
-
+This research has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 688382.
