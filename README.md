@@ -43,9 +43,13 @@ See the complete task description here: http://www.multimediaeval.org/mediaeval2
 
 ## Data
 ### Genre annotations
-We provide four datasets containing genre/subgenre annotations extracted from four different online metadata sources. Two of our sources (**AllMusic** and **Discogs**) are online editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations following a genre taxonomy predefined by experts. Two other sources (**Lastfm** and **Tagtraum**) are collaborative music tagging platforms with large amounts of weak genre labels provided by their users. We have automatically inferred genre/subgenre taxonomy and annotations from these tags following the algorithm proposed in [6].  
+We provide four datasets containing genre/subgenre annotations extracted from four different online metadata sources. 
 
-Importantly, all our annotations are multi-label. There may be multiple genre and subgenre annotations for the same music recording. It it guaranteed that each recording has at least one genre label, while subgenres are not always present. 
+Two of our datasets (**AllMusic** and **Discogs**) are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre namespace and taxonomy. We propagated release-level annotations to recordings (tracks) in AcousticBrainz to build our datasets. 
+
+Two other datasets (**Lastfm** and **Tagtraum**) are based on collaborative music tagging platforms with large amounts of genre labels provided by their users. We have automatically inferred genre/subgenre taxonomy and annotations from these tags following the algorithm proposed in [6] and a manual post-processing.
+
+Importantly, annotations in the datasets are multi-label. There may be multiple genre and subgenre annotations for the same music recording. It it guaranteed that each recording has at least one genre label, while subgenres are not always present.
 
 All four genre datasets are distributed as TSV files with the following format: 
 ```
@@ -63,14 +67,14 @@ A real data example:
 
 RecordingID is a [MusicBrainz identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier) of each particular music [recording](https://musicbrainz.org/doc/Recording) (a music track or song). Each line corresponds to a particular RecordingID and contains all its ground-truth genre and subgenre labels. To distinguish between genre and subgenre labels, subgenre strings are compound and contain ```---``` as a separator between a parent genre and a subgenre name. For example, ```rock```, ```electronic```, ```jazz``` and ```hip hop``` are genres, while ```electronic---ambient```, ```rock---singersongwriter``` and ```jazz---latinjazz``` are subgenres. 
 
-Additionally, we provide ReleaseGroupID of a recording, which is a MusicBrainz identifier of a [release group](https://musicbrainz.org/doc/Release_Group) (an album, single, or compilation) it belongs to. This data may be useful, if one wants to avoid a potential "album effect" [8], which consists in overestimation of the performance of a classifier when a test set contains music tracks from the same albums as the training set.
+Additionally, we provide ReleaseGroupID for each recording, which is a MusicBrainz identifier of a [release group](https://musicbrainz.org/doc/Release_Group) (an album, single, or compilation) it belongs to. This data may be useful, if one wants to avoid an "album effect" [8], which consists in potential overestimation of the performance of a classifier when a test set contains music recordings from the same albums as the training set.
 
 
 ### Music features
 We provide a dataset of music features precomputed from audio for every music recording from the four genre ground truths. The dataset can be downloaded as  an archive. It contains a json file with music features for every ReleaseID. See an [example json file](http://acousticbrainz.org/a3b8950a-d1f8-49b9-b88f-89f38726f332/low-level/view?n=0).
 
 All music features are taken from the community-built database [AcousticBrainz](http://acousticbrainz.org) and were extracted from audio using [Essentia](http://essentia.upf.edu), an open-source library for music audio analysis.
-They are grouped into categories, low-level, rhythm, and tonal, and are [explained in details here](http://essentia.upf.edu/documentation/streaming_extractor_music.html#music-descriptors). Only statistical characterization of time frames is provided (bag of features), no frame data is available.
+They are grouped into categories (low-level, rhythm, and tonal) and are [explained in details here](http://essentia.upf.edu/documentation/streaming_extractor_music.html#music-descriptors). Only statistical characterization of time frames is provided (bag of features), no frame data is available.
 
  
 ## Development Data
