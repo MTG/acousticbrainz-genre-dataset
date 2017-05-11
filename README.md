@@ -3,7 +3,7 @@
 - May 11: It took us extra time to process and organize our very large amounts of data. We are almost ready to release development and testing datasets within a few days!
 
 ## Task schedule
-- **Development and testing datasets will be released on May 1, 2017**
+- **Development and testing datasets will be released on May 15, 2017**
 - June: Release of a baseline approach
 - May-Mid-August: Work on algorithms
 - Mid-August: Submit runs
@@ -38,8 +38,6 @@ This subtask will explore how to combine several ground-truth sources to create 
 Participants are expected to submit predictions for both subtasks. If they only want to work on the first subtask, they should submit the same predictions for the second subtask. We allow only five evaluation runs. 
 In every single run, participants should submit predictions for both Subtask1 and Subtask2 in two separate files. 
 
-
-See the complete task description here: http://www.multimediaeval.org/mediaeval2017/acousticbrainz/index.html
 
 ## Data
 ### Genre annotations
