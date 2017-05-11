@@ -119,10 +119,6 @@ Please follow the general instructions for the working notes paper. Remember to 
 
 [3] Porter, A., Bogdanov, D., Serra, X. Mining metadata from the web for AcousticBrainz. In Proceedings of the 3rd International workshop on Digital Libraries for Musicology. New York, USA, 2016, 53-56. ACM.
 
-[4] Silla, C.N., Freitas, A. A. A survey of hierarchical classification across different application domains. Data Mining and Knowledge Discovery, 2011, 22(1-2), 31-72.
-
-[5] Kiritchenko S., Matwin S., Famili A.F. Functional annotation of genes using hierarchical text categorization. In Proceedings of the ACL workshop on linking biological literature, ontologies and databases: mining biological semantics. 2005.
-
 [6] Schreiber, H. Improving genre annotations for the million song dataset. In Proceedings of the 16th International Society for Music Information Retrieval Conference. Málaga, Spain, 2015, 242-247.
 
 [7] Pachet, F., & Cazaly, D. A taxonomy of musical genres. In Content-Based Multimedia Information Access, RIAO 2000, volume 2, 1238-1245. 
@@ -139,8 +135,8 @@ Please follow the general instructions for the working notes paper. Remember to 
 
 
 ## Acknowledgments
-[AcousticBrainz](https://acousticbrainz.org/) and [Audio Commons](http://audiocommons.org/)
+[AcousticBrainz](https://acousticbrainz.org/), [Audio Commons](http://audiocommons.org/) and [Tagtraum](http://www.tagtraum.com/)
 
-![alt text](img/audio-commons-icon_64px.jpg)    <img src="img/acousticbrainz_logo_short_horizontal.png" height="64">
+<img src="img/audio-commons-icon_64px.jpg" height="64" hspace="20"><img src="img/acousticbrainz_logo_short_horizontal.png" height="64" hspace="20"><img src="img/tagtraum_logo_small_w_g@2x.png" height="64" hspace="20">
 
-This research has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 688382.
+This research has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 688382.
