@@ -15,7 +15,9 @@
 ## Task description
 This task invites participants to **predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings**. We provide a training set of such audio features taken from the [AcousticBrainz](http://acousticbrainz.org/) database together with **four different ground truths of genre and subgenre labels**. These genre datasets were created using as a source four different music metadata websites. Their genre taxonomies vary in class spaces, specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions of genre and subgenre labels for a test set.
 
-We provide a dataset (development and test sets) for every genre ground truth. In total, participants will be given four development datasets and all proposed models will be evaluated on four test datasets. **The goal is to create a system that uses provided music features as an input and predicts genre and subgenre labels, following genre taxonomy of each ground truth.**
+We provide a dataset (a development and test set) for every genre ground truth. In total, participants will be given four development datasets and all proposed models will be evaluated on four test datasets. **The goal is to create a system that uses provided music features as an input and predicts genre and subgenre labels, following genre taxonomy of each ground truth.**
+
+Importantly, annotations in the datasets are multi-label. **There may be multiple genre and subgenre annotations for the same music recording.** It is guaranteed that each recording has at least one genre label, while subgenres are not always present.
 
 The task includes two subtasks:
 
@@ -32,7 +34,7 @@ This subtask will explore conventional systems each one trained on a single grou
 ![alt text](img/ab_subtask1.jpeg)
 
 **Subtask 2: Multi-source Classification.**
-This subtask will explore how to combine several ground-truth sources to create a classification system. We will use the same four test sets, each created from one of the four data sources. Participants will submit predictions for each test set separately, again following each corresponding genre class space. Predictions may be produced by a single system for all datasets or by one system for each dataset. Participants are free to make their own decision, however, about how to combine the training data/ground truth.
+This subtask will explore how to combine several ground-truth sources to create a classification system. We will use the same four test sets, each created from one of the four data sources. Participants will submit predictions for each test set separately, again following each corresponding genre class space. Predictions may be produced by a single system for all datasets or by one system for each dataset. Participants are free to make their own decision about how to combine the training data/ground truth.
 
 ![alt text](img/ab_subtask2.jpeg)
 
@@ -41,13 +43,11 @@ This subtask will explore how to combine several ground-truth sources to create 
 ### Genre annotations
 We provide four datasets containing genre/subgenre annotations extracted from four different online metadata sources. 
 
-Two of our datasets (**AllMusic** and **Discogs**) are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre namespace and taxonomy. We propagated release-level annotations to recordings (tracks) in AcousticBrainz to build our datasets. 
+Two of our datasets (**AllMusic** and **Discogs**) are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre namespace and taxonomy. We propagated release-level annotations to recordings (tracks) in AcousticBrainz to build the datasets. 
 
 Two other datasets (**Lastfm** and **Tagtraum**) are based on collaborative music tagging platforms with large amounts of genre labels provided by their users to characterise music recordings. We have automatically inferred genre/subgenre taxonomy and annotations from these tags following the algorithm proposed in [6] and a manual post-processing.
 
-Importantly, annotations in the datasets are multi-label. There may be multiple genre and subgenre annotations for the same music recording. It it guaranteed that each recording has at least one genre label, while subgenres are not always present.
-
-All four genre datasets are distributed as TSV files with the following format: 
+All four training genre datasets are distributed as TSV files with the following format: 
 ```
 [RecordingID] [ReleaseGroupID] [genre or subgenre label] ...
 ```
@@ -61,13 +61,13 @@ A real data example:
 728f0f0e-1b7c-487a-ad0b-f5888d637ac6    1199fd4e-4125-45f0-88a5-2865c9d10a20    electronic      electronic---ambient    instrumental    rock    rock---spacerock
 ```
 
-RecordingID is a [MusicBrainz identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier) of each particular music [recording](https://musicbrainz.org/doc/Recording) (a music track or song). Each line corresponds to a particular RecordingID and contains all its ground-truth genre and subgenre labels. To distinguish between genre and subgenre labels, subgenre strings are compound and contain ```---``` as a separator between a parent genre and a subgenre name. For example, ```rock```, ```electronic```, ```jazz``` and ```hip hop``` are genres, while ```electronic---ambient```, ```rock---singersongwriter``` and ```jazz---latinjazz``` are subgenres. 
+RecordingID is a [MusicBrainz identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier) of each particular music [recording](https://musicbrainz.org/doc/Recording) (a music track or song). Each line corresponds to a particular RecordingID and contains all its ground-truth genre and subgenre labels. To distinguish between genre and subgenre labels, subgenre strings are compound and contain ```---``` as a separator between a parent genre and an actual subgenre name. For example, ```rock```, ```electronic```, ```jazz``` and ```hip hop``` are genres, while ```electronic---ambient```, ```rock---singersongwriter``` and ```jazz---latinjazz``` are subgenres. 
 
 Additionally, we provide ReleaseGroupID for each recording, which is a MusicBrainz identifier of a [release group](https://musicbrainz.org/doc/Release_Group) (an album, single, or compilation) it belongs to. This data may be useful, if one wants to avoid an "album effect" [8], which consists in potential overestimation of the performance of a classifier when a test set contains music recordings from the same albums as the training set.
 
 
 ### Music features
-We provide a dataset of music features precomputed from audio for every music recording from the four genre ground truths. The dataset can be downloaded as  an archive. It contains a json file with music features for every ReleaseID. See an [example json file](http://acousticbrainz.org/a3b8950a-d1f8-49b9-b88f-89f38726f332/low-level/view?n=0).
+We provide a dataset of music features precomputed from audio for every music recording from the four genre ground truths. The dataset can be downloaded as  an archive. It contains a json file with music features for every RecordingID. See an [example json file](http://acousticbrainz.org/a3b8950a-d1f8-49b9-b88f-89f38726f332/low-level/view?n=0).
 
 All music features are taken from the community-built database [AcousticBrainz](http://acousticbrainz.org) and were extracted from audio using [Essentia](http://essentia.upf.edu), an open-source library for music audio analysis.
 They are grouped into categories (low-level, rhythm, and tonal) and are [explained in details here](http://essentia.upf.edu/documentation/streaming_extractor_music.html#music-descriptors). Only statistical characterization of time frames is provided (bag of features), no frame data is available.
@@ -106,7 +106,9 @@ The ground truth does not necessarily contain subgenre annotations for some reco
 
 Participants are expected to submit predictions for both subtasks. **If they only want to work on the first subtask, they should submit the same predictions for the second subtask**. We allow only five evaluation runs (each run includes both subtasks). In every single run, participants should submit predictions for both Subtask1 and Subtask2 in two separate files. 
 
-Submission format: to be announced. Each submission should include four TSV files for Subtask1 (one file for each test dataset) and four TSV files for Subtask2. Submissions should follow a format similar to genre ground truth format (see Data section):
+Submission format: to be announced. 
+
+Each submission should include four TSV files for Subtask1 (one file for each test dataset) and four TSV files for Subtask2. Submissions should follow a format similar to genre ground truth format (see Data section):
 
 ```
 [RecordingID] [genre or subgenre label] ...
