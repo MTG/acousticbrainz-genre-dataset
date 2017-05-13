@@ -1,9 +1,9 @@
 # AcousticBrainz Genre Task 2017: Content-based music genre recognition from multiple sources
 ## Announcements
-- May 11: It took us extra time to process and organize our very large amounts of data. We are almost ready to release development and testing datasets within a few days!
+- May 11: It took us extra time to process and organize our very large amounts of data. We are almost ready to release development and test datasets within a few days!
 
 ## Task schedule
-- **We expect to release development and testing datasets on May 15, 2017**
+- **We expect to release development and test datasets on May 15, 2017**
 - June: Release of a baseline approach
 - May-Mid-August: Work on algorithms
 - Mid-August: Submit runs
@@ -13,14 +13,14 @@
 - 13-15 September MediaEval 2017 Workshop in Dublin
  
 ## Task description
-This task invites participants to **predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings**. We provide a training set of such audio features taken from the [AcousticBrainz](http://acousticbrainz.org/) database together with **four different ground truths of genre and subgenre labels**. These genre datasets were created using as a source four different music metadata websites. Their genre taxonomies vary in namespaces, specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions of genre and subgenre labels for a test set.
+This task invites participants to **predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings**. We provide a training set of such audio features taken from the [AcousticBrainz](http://acousticbrainz.org/) database together with **four different ground truths of genre and subgenre labels**. These genre datasets were created using as a source four different music metadata websites. Their genre taxonomies vary in class spaces, specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions of genre and subgenre labels for a test set.
 
-Participants will be given four development datasets (features + genre ground truths). All proposed models will be evaluated on four testing datasets. The goal is to create a system that uses provided music features as an input and predicts genre and subgenre labels, following genre taxonomy of each testing dataset, as an output.
+We provide a dataset (development and test sets) for every genre ground truth. In total, participants will be given four development datasets and all proposed models will be evaluated on four test datasets. **The goal is to create a system that uses provided music features as an input and predicts genre and subgenre labels, following genre taxonomy of each ground truth.**
 
 The task includes two subtasks:
 
-- Subtask 1: consider each genre ground truth individually to generate predictions for the four testing datasets. This subtask will serve as a baseline for Subtask 2.
-- Subtask 2: combine genre ground truths together to generate predictions for the four testing datasets.
+- **Subtask 1: consider each genre ground truth individually** to generate predictions for the four test datasets. This subtask will serve as a baseline for Subtask 2.
+- **Subtask 2: combine genre ground truths together** to generate predictions for the four test datasets.
 
 Participants are expected to create models and submit their predictions for both subtasks. In the case they only want to work on Subtask 1, the same predictions will be used for evaluation in the Subtask 2. 
 
@@ -106,13 +106,13 @@ The ground truth does not necessarily contain subgenre annotations for some reco
 
 Participants are expected to submit predictions for both subtasks. **If they only want to work on the first subtask, they should submit the same predictions for the second subtask**. We allow only five evaluation runs (each run includes both subtasks). In every single run, participants should submit predictions for both Subtask1 and Subtask2 in two separate files. 
 
-Submission format: to be announced. Each submission should include four TSV files for Subtask1 (one file for each testing dataset) and four TSV files for Subtask2. Submissions should follow a format similar to genre ground truth format (see Data section):
+Submission format: to be announced. Each submission should include four TSV files for Subtask1 (one file for each test dataset) and four TSV files for Subtask2. Submissions should follow a format similar to genre ground truth format (see Data section):
 
 ```
 [RecordingID] [genre or subgenre label] ...
 ```
 
-Each line in a TSV corresponds to an anonymized RecordingID from a testing dataset and should **include explicitly all predicted genre and subgenre labels**. 
+Each line in a TSV corresponds to an anonymized RecordingID from a test dataset and should **include explicitly all predicted genre and subgenre labels**. 
 
 Participants can ensure their submission format is correct running the provided evaluation script. 
 
