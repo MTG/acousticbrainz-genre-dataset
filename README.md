@@ -29,27 +29,27 @@ Participants are expected to create models and submit their predictions for both
 Below is a detailed description of the subtasks.
 
 **Subtask 1: Single-source Classification.** 
-This subtask will explore conventional systems each one trained on a single grount-truth dataset. Participants will submit predictions for the test set of each dataset separately, following their respective class spaces (genres and subgenres). These predictions will be produced by a separate system for each dataset, trained without any information from the other sources.
+This subtask will explore conventional systems, each one trained on a single dataset. Participants will submit predictions for the test set of each dataset separately, following their respective class spaces (genres and subgenres). These predictions will be produced by a separate system for each dataset, trained without any information from the other sources.
 
 ![alt text](img/ab_subtask1.jpeg)
 
 **Subtask 2: Multi-source Classification.**
-This subtask will explore how to combine several ground-truth sources to create a classification system. We will use the same four test sets, each created from one of the four data sources. Participants will submit predictions for each test set separately, again following each corresponding genre class space. Predictions may be produced by a single system for all datasets or by one system for each dataset. Participants are free to make their own decision about how to combine the training data/ground truth.
+This subtask will explore how to combine several ground-truth sources to create a classification system. We will use the same four test sets. Participants will submit predictions for each test set separately, again following each corresponding genre class space. These predictions may be produced by a single system for all datasets or by one system for each dataset. Participants are free to make their own decision about how to combine the training data from all sources.
 
 ![alt text](img/ab_subtask2.jpeg)
 
 
 ## Data
 ### Genre annotations
-We provide four datasets containing genre/subgenre annotations extracted from four different online metadata sources. 
+We provide four datasets containing genre and subgenre annotations extracted from four different online metadata sources. 
 
-Two of our datasets (**AllMusic** and **Discogs**) are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre namespace and taxonomy. We propagated release-level annotations to recordings (tracks) in AcousticBrainz to build the datasets. 
+Two datasets (**AllMusic** and **Discogs**) are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre namespace and taxonomy. We propagated release-level annotations to recordings (tracks) in AcousticBrainz to build the datasets. 
 
-Two other datasets (**Lastfm** and **Tagtraum**) are based on collaborative music tagging platforms with large amounts of genre labels provided by their users to characterise music recordings. We have automatically inferred genre/subgenre taxonomy and annotations from these tags following the algorithm proposed in [6] and a manual post-processing.
+The other two datasets (**Lastfm** and **Tagtraum**) are based on collaborative music tagging platforms with large amounts of genre labels provided by their users. We have automatically inferred a genre/subgenre taxonomy and annotations from these labels following the algorithm proposed in [6] and a manual post-processing.
 
 All four training genre datasets are distributed as TSV files with the following format: 
 ```
-[RecordingID] [ReleaseGroupID] [genre or subgenre label] ...
+[RecordingID] [ReleaseGroupID] [genre/subgenre label] [genre/subgenre label] ...
 ```
 
 A real data example:
@@ -61,19 +61,19 @@ A real data example:
 728f0f0e-1b7c-487a-ad0b-f5888d637ac6    1199fd4e-4125-45f0-88a5-2865c9d10a20    electronic      electronic---ambient    instrumental    rock    rock---spacerock
 ```
 
-RecordingID is a [MusicBrainz identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier) of each particular music [recording](https://musicbrainz.org/doc/Recording) (a music track or song). Each line corresponds to a particular RecordingID and contains all its ground-truth genre and subgenre labels. To distinguish between genre and subgenre labels, subgenre strings are compound and contain ```---``` as a separator between a parent genre and an actual subgenre name. For example, ```rock```, ```electronic```, ```jazz``` and ```hip hop``` are genres, while ```electronic---ambient```, ```rock---singersongwriter``` and ```jazz---latinjazz``` are subgenres. 
+Each line corresponds to one [recording](https://musicbrainz.org/doc/Recording) (a music track or song), and contains all its ground-truth genre and subgenre labels. `RecordingID` is the [MusicBrainz identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier) of the particular recording. To distinguish between genre and subgenre labels, subgenre strings are compound and contain ```---``` as a separator between a parent genre and an actual subgenre name. For example, ```rock```, ```electronic```, ```jazz``` and ```hip hop``` are genres, while ```electronic---ambient```, ```rock---singersongwriter``` and ```jazz---latinjazz``` are subgenres. 
 
-Additionally, we provide ReleaseGroupID for each recording, which is a MusicBrainz identifier of a [release group](https://musicbrainz.org/doc/Release_Group) (an album, single, or compilation) it belongs to. This data may be useful, if one wants to avoid an "album effect" [8], which consists in potential overestimation of the performance of a classifier when a test set contains music recordings from the same albums as the training set.
+Additionally, we provide `ReleaseGroupID` for each recording, which is a MusicBrainz identifier of a [release group](https://musicbrainz.org/doc/Release_Group) (an album, single, or compilation) it belongs to. This data may be useful if one wants to avoid an "album effect" [8], which consists in potential overestimation of the performance of a classifier when a test set contains music recordings from the same albums as the training set.
 
 
 ### Music features
-We provide a dataset of music features precomputed from audio for every music recording from the four genre ground truths. The dataset can be downloaded as  an archive. It contains a json file with music features for every RecordingID. See an [example json file](http://acousticbrainz.org/a3b8950a-d1f8-49b9-b88f-89f38726f332/low-level/view?n=0).
+We provide a dataset of music features precomputed from audio for every music recording. The dataset can be downloaded as an archive. It contains a JSON file with music features for every `RecordingID`. See an [example JSON file](http://acousticbrainz.org/a3b8950a-d1f8-49b9-b88f-89f38726f332/low-level/view?n=0).
 
 All music features are taken from the community-built database [AcousticBrainz](http://acousticbrainz.org) and were extracted from audio using [Essentia](http://essentia.upf.edu), an open-source library for music audio analysis.
-They are grouped into categories (low-level, rhythm, and tonal) and are [explained in details here](http://essentia.upf.edu/documentation/streaming_extractor_music.html#music-descriptors). Only statistical characterization of time frames is provided (bag of features), no frame data is available.
+They are grouped into categories (low-level, rhythm, and tonal) and are [explained in detail here](http://essentia.upf.edu/documentation/streaming_extractor_music.html#music-descriptors). Only statistical characterization of time frames is provided (bag of features), no frame-level data is available.
 
  
-## Development Data
+### Development Data
 Download links
 
 - music features: **to be announced on May 15**
@@ -83,24 +83,12 @@ Download links
     - Lastfm: **to be announced on May 15**
     - Tagtraum: **to be announced on May 15**
 
-## Test Data
+### Test Data
 Download links
 
 - music features: **to be announced on May 15**
 
 Test data contains music features for recordings with anonymized RecordingIDs. To avoid a potential album effect [8], no recording in the test set contains music from the same release groups as the recordings in the train set.  
-
-
-## Evaluation Methodology and Metrics
-
-Download evaluation script: (**to be announced in mid-May**). 
-
-(TO BE UPDATED)
-
-There will be a separate evaluation on both genre- and subgenre-levels for each ground-truth dataset (AllMusic, Discogs, Lastfm, Tagtraum). In both cases, the main metric will be F-score across recordings. Additionally, we will compute the F-score for each genre/subgenre label.
-
-The ground truth does not necessarily contain subgenre annotations for some recordings. Therefore, only recordings containing subgenres will be considered for the evaluation on the subgenre level.
-
  
 ## Run submission
 
@@ -108,16 +96,28 @@ Participants are expected to submit predictions for both subtasks. **If they onl
 
 Submission format: to be announced. 
 
-Each submission should include four TSV files for Subtask1 (one file for each test dataset) and four TSV files for Subtask2. Submissions should follow a format similar to genre ground truth format (see Data section):
+Each submission should include four TSV files for Subtask1 (one file for each test dataset) and four TSV files for Subtask2. Submissions should follow a format similar to the ground truth format (see Data section):
 
 ```
-[RecordingID] [genre or subgenre label] ...
+[RecordingID] [genre/subgenre label] [genre/subgenre label] ...
 ```
 
-Each line in a TSV corresponds to an anonymized RecordingID from a test dataset and should **include explicitly all predicted genre and subgenre labels**. 
+Each line corresponds to an anonymized RecordingID from a test dataset and should **include explicitly all predicted genre and subgenre labels**. 
 
-Participants can ensure their submission format is correct running the provided evaluation script. 
+Participants can ensure their submission format is correct running the provided evaluation script (**to be announced in mid-May**). 
 
+## Evaluation Methodology
+
+The evaluation will be carried out for each dataset separately. In particular, we will compute precision, recall and F-score as follows:
+
+* Per recording, only genre labels.
+* Per recording, only subgenre labels.
+* Per recording, all labels.
+* Per label, all recordings.  
+
+Note that the ground truth does not necessarily contain subgenre annotations for some recordings. Therefore, only recordings containing subgenres will be considered for the evaluation on the subgenre level.
+
+An evaluation script is provided for development: (**to be announced in mid-May**). 
  
 ## Working Notes and Overview Paper
 Please follow the general instructions for the working notes paper. Remember to cite the task overview paper in your working notes paper. A draft version of that paper is available here: <Link to be added when the test data is released>
