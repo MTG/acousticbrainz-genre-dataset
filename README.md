@@ -76,12 +76,16 @@ They are grouped into categories (low-level, rhythm, and tonal) and are [explain
 ### Development and Test Data
 The **development data** contains:
 
-- **music features for all recordings** in AllMusic, Discogs, Lastfm and Tagtraum datasets (~30GB bz2 archives, 83GB uncompressed JSON files). Each filename corresponds to a ``RecordingID``. They are split into 8 separate archives according to the first two hex digits of their RecordingIDs.
-- **four archives with ground-truth genre annotations** (AllMusic, Discogs, Lastfm, Tagtraum)
+- **music features for all recordings** in AllMusic, Discogs, Lastfm and Tagtraum datasets (~30GB bz2 archives, 83GB uncompressed JSON files). Each filename corresponds to a ``RecordingID`` (which is a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)). They are split into 8 separate archives according to the first hex digits of their RecordingIDs.
+ - Because there is substantial overlap between the Recordings in each dataset, we provide a single series of archives which contain data for all datasets.
+ - All archives will uncompress into a directory named `acousticbrainz-mediaeval-train`. Data files are named in the form `54/54551aad-fb76-4e22-8725-fd495c32b155.json`, where the file is inside a subdirectory named by the first two letters of its RecordingId.
+ - You may find that the data files have a value in the `metadata.tags.musicbrainz_recordingid` field which is different to the RecordingID used in the filename. [This is to be expected due to Musicbrainz ID redirects](https://musicbrainz.org/doc/MusicBrainz_Identifier).
+- **four archives with ground-truth genre annotations** (AllMusic, Discogs, Lastfm, Tagtraum - see format description above)
 
 The **test data** contains **four archives of music features for recordings with anonymized RecordingIDs**. To avoid a potential album effect [8], no recording in the test set contains music from the same release groups as the recordings in the train set.
+- Although RecordingIDs are UUIDs, they have been randomly anonymised and do not correspond to any MusicBrainz IDs on musicbrainz.org
 
-All data is packed with bzip2. Checksums are provided to ensure that you have correctly downloaded the archives.
+All data is compressed with bzip2. Checksums are provided to ensure that you have correctly downloaded the archives.
 
 The development and test data for Discogs, Lastfm and Tagtraum is publicly available [here](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U)
 
@@ -99,9 +103,9 @@ Please, contact the organizers if you have further questions or need help.
 
 Participants are expected to submit predictions for both subtasks. **If they only want to work on the first subtask, they should submit the same predictions for the second subtask**. We allow only five evaluation runs (each run includes both subtasks). In every single run, participants should submit predictions for both Subtask1 and Subtask2 in two separate files. 
 
-Submission format: to be announced. 
+Submission format: 
 
-Each submission should include four TSV files for Subtask1 (one file for each test dataset) and four TSV files for Subtask2. Submissions should follow a format similar to the ground truth format (see Data section):
+Each submission should include three or four TSV files for Subtask1 (one file for each test dataset, only provide three if you are not using AllMusic data) and three or four TSV files for Subtask2. Submissions should follow a format similar to the ground truth format (see Data section):
 
 ```
 [RecordingID] [genre/subgenre label] [genre/subgenre label] ...
@@ -109,7 +113,7 @@ Each submission should include four TSV files for Subtask1 (one file for each te
 
 Each line corresponds to an anonymized RecordingID from a test dataset and should **include explicitly all predicted genre and subgenre labels**. 
 
-Participants can ensure their submission format is correct running the provided evaluation script (**to be announced in mid-May**). 
+Participants can ensure their submission format is correct running the provided evaluation script (**to be announced in June**). 
 
 Participants should report whether they used the whole development dataset or only its part for every submission.
 
