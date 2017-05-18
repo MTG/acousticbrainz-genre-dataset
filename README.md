@@ -3,7 +3,7 @@
 - May 11: It took us extra time to process and organize our very large amounts of data. We are almost ready to release development and test datasets within a few days!
 
 ## Task schedule
-- **We expect to release development and test datasets on May 15, 2017**
+- **Development and test datasets released on May 18, 2017**
 - June: Release of a baseline approach
 - May-Mid-August: Work on algorithms
 - Mid-August: Submit runs
@@ -73,22 +73,27 @@ All music features are taken from the community-built database [AcousticBrainz](
 They are grouped into categories (low-level, rhythm, and tonal) and are [explained in detail here](http://essentia.upf.edu/documentation/streaming_extractor_music.html#music-descriptors). Only statistical characterization of time frames is provided (bag of features), no frame-level data is available.
 
  
-### Development Data
-Download links
+### Development and Test Data
+The **development data** contains:
 
-- music features: **to be announced on May 15**
-- ground-truth genre annotations:
-    - AllMusic: **to be announced on May 15**
-    - Discogs: **to be announced on May 15**
-    - Lastfm: **to be announced on May 15**
-    - Tagtraum: **to be announced on May 15**
+- **music features for all recordings** in AllMusic, Discogs, Lastfm and Tagtraum datasets (JSON files, each filename correspond to a ``RecordingID``). They are split into 8 separate archives according to the first two hex digits of their RecordingIDs. ~30GB bz2 archives, 83GB uncompressed JSON files.
+- **four archives with ground-truth genre annotations** (AllMusic, Discogs, Lastfm, Tagtraum)
 
-### Test Data
-Download links
+The **test data** contains **four archives of music features for recordings with anonymized RecordingIDs**. To avoid a potential album effect [8], no recording in the test set contains music from the same release groups as the recordings in the train set.
 
-- music features: **to be announced on May 15**
+All data is packed with bzip2. Checksums are provided to ensure that you have correctly downloaded the archives.
 
-Test data contains music features for recordings with anonymized RecordingIDs. To avoid a potential album effect [8], no recording in the test set contains music from the same release groups as the recordings in the train set.  
+The development and test data for Discogs, Lastfm and Tagtraum is publicly available at: https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U
+
+The development data (genre ground truth) and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
+
+
+### Notes
+
+Note that the data we provide is very large-scale. It includes a large number of music recordings and many of music features for those recordings. Participants are free to use all of the data to train their systems or only its part.
+
+Please, contact the organizers if you have further questions or need help. 
+
  
 ## Run submission
 
@@ -105,6 +110,8 @@ Each submission should include four TSV files for Subtask1 (one file for each te
 Each line corresponds to an anonymized RecordingID from a test dataset and should **include explicitly all predicted genre and subgenre labels**. 
 
 Participants can ensure their submission format is correct running the provided evaluation script (**to be announced in mid-May**). 
+
+Participants should report whether they used the whole development dataset or only its part for every submission.
 
 ## Evaluation Methodology
 
