@@ -82,7 +82,7 @@ The **development data** contains:
  - You may find that the data files have a value in the `metadata.tags.musicbrainz_recordingid` field which is different to the RecordingID used in the filename. [This is to be expected due to Musicbrainz ID redirects](https://musicbrainz.org/doc/MusicBrainz_Identifier).
 - **four archives with ground-truth genre annotations** (AllMusic, Discogs, Lastfm, Tagtraum - see format description above)
 
-The **test data** contains **four archives of music features for recordings with anonymized RecordingIDs**. To avoid a potential album effect [8], no recording in the test set contains music from the same release groups as the recordings in the train set.
+The **test data** contains **four archives of music features for recordings with anonymized RecordingIDs**. To avoid a potential album effect [4], no recording in the test set contains music from the same release groups as the recordings in the train set.
 - Although RecordingIDs are UUIDs, they have been randomly anonymised and do not correspond to any MusicBrainz IDs on musicbrainz.org
 
 All data is compressed with bzip2. Checksums are provided to ensure that you have correctly downloaded the archives.
