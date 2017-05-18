@@ -76,7 +76,7 @@ They are grouped into categories (low-level, rhythm, and tonal) and are [explain
 ### Development and Test Data
 The **development data** contains:
 
-- **music features for all recordings** in AllMusic, Discogs, Lastfm and Tagtraum datasets (JSON files, each filename correspond to a ``RecordingID``). They are split into 8 separate archives according to the first two hex digits of their RecordingIDs. ~30GB bz2 archives, 83GB uncompressed JSON files.
+- **music features for all recordings** in AllMusic, Discogs, Lastfm and Tagtraum datasets (~30GB bz2 archives, 83GB uncompressed JSON files). Each filename corresponds to a ``RecordingID``. They are split into 8 separate archives according to the first two hex digits of their RecordingIDs.
 - **four archives with ground-truth genre annotations** (AllMusic, Discogs, Lastfm, Tagtraum)
 
 The **test data** contains **four archives of music features for recordings with anonymized RecordingIDs**. To avoid a potential album effect [8], no recording in the test set contains music from the same release groups as the recordings in the train set.
