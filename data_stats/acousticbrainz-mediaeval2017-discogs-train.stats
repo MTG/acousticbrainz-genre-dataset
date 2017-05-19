@@ -1,0 +1,346 @@
+genre/subgenre	recordings	releasegroups
+blues	29188	3831
+blues---chicago blues	1814	241
+blues---country blues	2282	302
+blues---delta blues	939	146
+blues---east coast blues	127	22
+blues---electric blues	2459	337
+blues---harmonica blues	440	64
+blues---louisiana blues	594	78
+blues---modern electric blues	963	121
+blues---piano blues	775	110
+blues---rhythm & blues	2631	466
+blues---texas blues	647	84
+brass & military	1018	124
+brass & military---brass band	254	29
+brass & military---military	257	28
+children's	2267	215
+classical	56643	4036
+classical---baroque	10162	475
+classical---classical	13908	709
+classical---contemporary	10550	860
+classical---early	164	22
+classical---impressionist	479	35
+classical---medieval	1498	164
+classical---modern	9017	603
+classical---neo-classical	2568	276
+classical---neo-romantic	1108	95
+classical---opera	1927	141
+classical---post-modern	489	69
+classical---renaissance	1210	71
+classical---romantic	11616	685
+electronic	220745	34432
+electronic---abstract	11709	1742
+electronic---acid	1205	262
+electronic---acid house	747	139
+electronic---acid jazz	1594	274
+electronic---ambient	33604	4785
+electronic---berlin-school	452	80
+electronic---big beat	1889	328
+electronic---breakbeat	6066	976
+electronic---breakcore	1835	231
+electronic---breaks	5131	742
+electronic---broken beat	1270	218
+electronic---chiptune	2088	260
+electronic---dance-pop	849	168
+electronic---dark ambient	5765	835
+electronic---darkwave	3027	525
+electronic---deep house	4029	842
+electronic---disco	7219	1539
+electronic---downtempo	27621	4224
+electronic---drone	2877	544
+electronic---drum n bass	8685	1541
+electronic---dub	6969	1051
+electronic---dub techno	770	160
+electronic---dubstep	5223	930
+electronic---ebm	5528	1020
+electronic---electro	26264	4576
+electronic---electro house	1215	299
+electronic---euro house	4987	1043
+electronic---eurodance	589	118
+electronic---experimental	31110	4504
+electronic---freestyle	473	77
+electronic---future jazz	4505	685
+electronic---gabber	853	154
+electronic---garage house	709	174
+electronic---ghetto	208	44
+electronic---glitch	2870	419
+electronic---goa trance	876	153
+electronic---grime	1267	200
+electronic---happy hardcore	994	159
+electronic---hard house	506	142
+electronic---hard trance	1092	281
+electronic---hardcore	2664	464
+electronic---hardstyle	306	64
+electronic---hi nrg	613	107
+electronic---hip hop	5279	731
+electronic---hip-house	424	78
+electronic---house	17454	3824
+electronic---idm	10574	1514
+electronic---illbient	752	114
+electronic---industrial	18542	3002
+electronic---italo-disco	768	156
+electronic---italodance	206	61
+electronic---jazzdance	757	128
+electronic---juke	143	29
+electronic---jungle	1326	204
+electronic---latin	1608	284
+electronic---leftfield	7834	1221
+electronic---minimal	6517	1112
+electronic---minimal techno	197	38
+electronic---modern classical	14283	1465
+electronic---musique concrète	804	100
+electronic---neofolk	2693	352
+electronic---new age	2631	423
+electronic---new beat	191	37
+electronic---new wave	4998	968
+electronic---noise	4264	703
+electronic---power electronics	1074	174
+electronic---progressive house	5280	788
+electronic---progressive trance	5286	634
+electronic---psy-trance	1527	351
+electronic---rhythmic noise	1121	264
+electronic---speedcore	288	36
+electronic---synth-pop	34718	5873
+electronic---synthwave	248	40
+electronic---tech house	4731	898
+electronic---techno	14687	2654
+electronic---trance	11306	1536
+electronic---tribal	3864	535
+electronic---tribal house	298	62
+electronic---trip hop	6440	928
+electronic---uk garage	1467	295
+electronic---vaporwave	490	45
+folk, world, & country	88480	11505
+folk, world, & country---african	2261	315
+folk, world, & country---bluegrass	2647	337
+folk, world, & country---cajun	387	56
+folk, world, & country---celtic	3135	435
+folk, world, & country---country	18228	2504
+folk, world, & country---fado	395	43
+folk, world, & country---folk	21879	2791
+folk, world, & country---gospel	916	117
+folk, world, & country---hindustani	214	44
+folk, world, & country---honky tonk	1029	134
+folk, world, & country---indian classical	324	65
+folk, world, & country---klezmer	489	52
+folk, world, & country---nordic	604	78
+folk, world, & country---pacific	232	39
+folk, world, & country---raï	113	23
+folk, world, & country---romani	115	19
+folk, world, & country---zydeco	271	48
+funk / soul	39621	6974
+funk / soul---afrobeat	676	122
+funk / soul---bayou funk	277	54
+funk / soul---contemporary r&b	931	156
+funk / soul---disco	4931	1215
+funk / soul---funk	7404	1476
+funk / soul---gospel	1267	206
+funk / soul---neo soul	1624	248
+funk / soul---p.funk	291	53
+funk / soul---psychedelic	568	106
+funk / soul---rhythm & blues	6317	1262
+funk / soul---soul	14907	2900
+genre1	1	1
+genre10	1	1
+genre11	1	1
+genre12	1	1
+genre13	1	1
+genre14	1	1
+genre15	1	1
+genre16	1	1
+genre17	1	1
+genre18	1	1
+genre19	1	1
+genre2	1	1
+genre20	1	1
+genre21	1	1
+genre22	1	1
+genre23	1	1
+genre24	1	1
+genre25	1	1
+genre26	1	1
+genre27	1	1
+genre28	1	1
+genre29	1	1
+genre3	1	1
+genre30	1	1
+genre4	1	1
+genre5	1	1
+genre6	1	1
+genre7	1	1
+genre8	1	1
+genre9	1	1
+hip hop	56426	7476
+hip hop---bass music	785	125
+hip hop---boom bap	177	39
+hip hop---conscious	5985	679
+hip hop---crunk	525	59
+hip hop---cut-up/dj	845	102
+hip hop---electro	2514	430
+hip hop---gangsta	3712	534
+hip hop---grime	776	109
+hip hop---hardcore hip-hop	874	120
+hip hop---horrorcore	395	45
+hip hop---instrumental	2359	287
+hip hop---jazzy hip-hop	1012	158
+hip hop---pop rap	4922	762
+hip hop---ragga hiphop	809	138
+hip hop---rnb/swing	7239	1201
+hip hop---thug rap	2264	267
+hip hop---trap	489	91
+hip hop---trip hop	1325	203
+jazz	75539	10150
+jazz---afro-cuban jazz	765	134
+jazz---afrobeat	383	66
+jazz---avant-garde jazz	846	111
+jazz---big band	5090	670
+jazz---bop	3994	517
+jazz---bossa nova	1313	223
+jazz---contemporary jazz	12303	1613
+jazz---cool jazz	2963	452
+jazz---dixieland	442	89
+jazz---easy listening	5966	961
+jazz---free improvisation	2012	280
+jazz---free jazz	3068	439
+jazz---fusion	5049	790
+jazz---gypsy jazz	811	100
+jazz---hard bop	3470	488
+jazz---jazz-funk	3123	598
+jazz---jazz-rock	4208	626
+jazz---latin jazz	2797	437
+jazz---modal	1317	202
+jazz---post bop	2909	433
+jazz---ragtime	376	47
+jazz---smooth jazz	3941	656
+jazz---soul-jazz	3974	713
+jazz---space-age	713	91
+jazz---swing	7142	908
+latin	14868	2407
+latin---afro-cuban	667	93
+latin---bossanova	882	157
+latin---cubano	206	38
+latin---cumbia	280	49
+latin---flamenco	1128	182
+latin---forró	191	29
+latin---mambo	295	61
+latin---mpb	2016	289
+latin---nueva cancion	219	34
+latin---pachanga	76	11
+latin---reggaeton	164	37
+latin---rumba	436	66
+latin---salsa	784	185
+latin---samba	783	136
+latin---son	310	43
+latin---tango	741	102
+non-music	8825	908
+non-music---comedy	4418	347
+non-music---dialogue	352	35
+non-music---field recording	463	52
+non-music---interview	923	132
+non-music---monolog	77	18
+non-music---poetry	247	31
+non-music---spoken word	1645	185
+pop	136567	21682
+pop---ballad	16165	2964
+pop---chanson	10801	1434
+pop---europop	6309	1314
+pop---indie pop	4005	689
+pop---j-pop	4382	820
+pop---music hall	331	53
+pop---novelty	738	139
+pop---parody	1264	162
+pop---schlager	3532	641
+pop---vocal	16615	3081
+reggae	18488	2502
+reggae---calypso	187	29
+reggae---dancehall	2349	358
+reggae---dub	5227	628
+reggae---lovers rock	277	67
+reggae---ragga	714	106
+reggae---reggae	4646	718
+reggae---reggae-pop	1119	231
+reggae---rocksteady	1320	189
+reggae---roots reggae	4312	544
+reggae---ska	2642	410
+rock	454272	60774
+rock---acoustic	17621	2325
+rock---alternative rock	57751	8268
+rock---aor	218	54
+rock---arena rock	1720	359
+rock---art rock	7333	1175
+rock---avantgarde	7384	1059
+rock---beat	1522	246
+rock---black metal	16099	3029
+rock---blues rock	15865	2126
+rock---brit pop	2746	511
+rock---classic rock	15811	2357
+rock---country rock	11476	1508
+rock---crust	244	38
+rock---death metal	19667	2767
+rock---deathrock	123	39
+rock---doo wop	886	148
+rock---doom metal	7770	1514
+rock---emo	3402	552
+rock---ethereal	2897	466
+rock---experimental	17628	2611
+rock---folk metal	1289	189
+rock---folk rock	30817	4063
+rock---funk metal	1382	178
+rock---garage rock	6788	1070
+rock---glam	3439	574
+rock---goth rock	8834	1529
+rock---gothic metal	1297	246
+rock---grindcore	4336	406
+rock---grunge	2356	326
+rock---hard rock	23731	3332
+rock---hardcore	16528	2338
+rock---heavy metal	31900	4239
+rock---indie rock	52141	7852
+rock---industrial	8401	1333
+rock---krautrock	1942	298
+rock---lo-fi	5076	692
+rock---lounge	1420	220
+rock---math rock	2329	360
+rock---melodic death metal	340	61
+rock---melodic hardcore	450	76
+rock---metalcore	1649	277
+rock---mod	1083	170
+rock---neofolk	2911	408
+rock---new wave	10575	1769
+rock---no wave	240	36
+rock---noise	3854	618
+rock---nu metal	3403	495
+rock---oi	991	181
+rock---parody	1683	208
+rock---pop punk	1639	286
+rock---pop rock	59967	9329
+rock---post rock	10326	1568
+rock---post-hardcore	577	92
+rock---post-punk	2980	526
+rock---power metal	2317	300
+rock---power pop	3162	586
+rock---prog rock	20252	2934
+rock---progressive metal	1035	163
+rock---psychedelic rock	18035	2650
+rock---psychobilly	1645	216
+rock---pub rock	268	60
+rock---punk	38028	5053
+rock---rock & roll	17855	2403
+rock---rockabilly	6146	711
+rock---shoegaze	4796	852
+rock---sludge metal	746	151
+rock---soft rock	11232	1969
+rock---southern rock	3330	469
+rock---space rock	3729	488
+rock---speed metal	2440	356
+rock---stoner rock	4683	736
+rock---surf	2387	314
+rock---symphonic rock	5508	841
+rock---thrash	9587	1335
+rock---viking metal	1968	310
+stage & screen	37259	2838
+stage & screen---musical	1656	201
+stage & screen---score	18661	1047
+stage & screen---soundtrack	22053	1586
+stage & screen---theme	1860	237
