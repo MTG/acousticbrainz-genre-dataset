@@ -87,12 +87,40 @@ The **test data** contains **four archives of music features for recordings with
 
 All data is compressed with bzip2. Checksums are provided to ensure that you have correctly downloaded the archives.
 
-The development and test data for Discogs, Lastfm and Tagtraum is publicly available [here](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U)
+The development and test data for Discogs, Lastfm and Tagtraum is publicly available [here](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U).
 
 The development data (genre ground truth) and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
 
 
 ### Notes
+
+To give an idea of the scale of the data, we report some statistics for the train datasets.
+
+AllMusic:
+
+- 1353213 recordings by 163654 releasegroups 
+- 1.33 genres and 3.15 subgenres per recordings on average
+- [genre/subgenre distribution](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/blob/master/data_stats/acousticbrainz-mediaeval2017-allmusic-train.stats)
+
+Discogs:
+
+- 904945 recordings by 118476 releasegroups
+- 1.37 genres and 1.69 subgenres per recording on average
+- [genre/subgenre distribution](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/blob/master/data_stats/acousticbrainz-mediaeval2017-discogs-train.stats)
+
+Lastfm:
+
+- 566711 recordings by 115162 releasegroups
+- 1.14 genres and 1.28 subgenres per recordings on average
+- [genre/subgenre distribution](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/blob/master/data_stats/acousticbrainz-mediaeval2017-lastfm-train.stats)
+
+Tagtraum:
+
+- 486741 recordings by 69026 releasegroups
+- 1.13 genres and 1.72 subgenres per recording on average
+- [genre/subgenre distribution](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/blob/master/data_stats/acousticbrainz-mediaeval2017-tagtraum-train.stats)
+
+The datasets are partially intersected. 
 
 Note that the data we provide is very large-scale. It includes a large number of music recordings and many of music features for those recordings. Participants are free to use all of the data to train their systems or only its part.
 
