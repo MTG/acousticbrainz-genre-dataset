@@ -54,11 +54,12 @@ All four training genre datasets are distributed as TSV files with the following
 
 A real data example:
 ```
-4d7ec57e-e0fa-42be-be93-592bcba9fe2b    3518b072-a066-41b6-b7f1-d8e66b04880f    metal   metal---heavymetal      metal---progressivemetal        rock    rock---progressiverock
-73274526-a840-4a51-b496-09fb94bf9360    b06eb8c1-4fae-4034-9a22-64fb2b37166f    country country---countryfolk   folk
-1a09500c-5a08-4381-9fcb-cb8ef0aed520    55a0b305-29a2-4120-99d6-2edca519cc8d    soul
-71a96555-5cd7-4062-9570-fb1921bab2f9    c6f1ff2d-d295-4f28-9161-559c3370cec9    pop     pop---ballad
-728f0f0e-1b7c-487a-ad0b-f5888d637ac6    1199fd4e-4125-45f0-88a5-2865c9d10a20    electronic      electronic---ambient    instrumental    rock    rock---spacerock
+6bb7e980-791c-44b5-9024-cc7c90bc8230    969ebfe8-0786-3ee0-b49b-3005fe653aa4    metal   metal---heavymetal  metal---progressivemetal    rock    rock---progressiverock
+92a70a47-98c4-43fd-8b1f-972657f627c3    7378d3cf-a3a9-3fe3-825b-70d6f0230250    country country---countryfolk   folk
+c7bee376-0020-461a-90a7-d5af73cfff05    6e652b2f-6f94-47ef-834a-a85d25921fce    soul
+93597a3e-cdca-4123-bcf5-343ff8debbe2    47de1259-bdeb-3f11-b612-4976887dca5c    pop pop---ballad
+a4d017d4-e75b-4eac-8f46-1b000ef407b0    9b1640de-4eb7-3071-b6a3-1c6f76c1a1b4    electronic  electronic---ambient    electronic---downtempo  pop rock    rock---indie    rock---spacerock
+27b7cf35-0238-4316-b2fd-c589a866603a    b6f21355-5e8e-33f7-acbf-03d99e9e90f9    electronic  electronic---bigbeat    electronic---techno
 ```
 
 Each line corresponds to one [recording](https://musicbrainz.org/doc/Recording) (a music track or song), and contains all its ground-truth genre and subgenre labels. `RecordingID` is the [MusicBrainz identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier) of the particular recording. To distinguish between genre and subgenre labels, subgenre strings are compound and contain ```---``` as a separator between a parent genre and an actual subgenre name. For example, ```rock```, ```electronic```, ```jazz``` and ```hip hop``` are genres, while ```electronic---ambient```, ```rock---singersongwriter``` and ```jazz---latinjazz``` are subgenres. 
