@@ -102,28 +102,28 @@ AllMusic:
 - 1353213 recordings by 163654 releasegroups
 - 21 genres, 745 subgenres
 - 1.33 genres and 3.15 subgenres per recording on average
-- [genre/subgenre distribution](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/blob/master/data_stats/acousticbrainz-mediaeval2017-allmusic-train.stats)
+- [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpMzZkUVVjUnItUHM)
 
 Discogs:
 
 - 904944 recordings by 118475 releasegroups
 - 15 genres, 300 subgenres
 - 1.37 genres and 1.69 subgenres per recording on average
-- [genre/subgenre distribution](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/blob/master/data_stats/acousticbrainz-mediaeval2017-discogs-train.stats)
+- [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpZUFSYjlJaXJhbVk)
 
 Lastfm:
 
 - 566710 recordings by 115161 releasegroups
 - 30 genres, 297 subgenres
 - 1.14 genres and 1.28 subgenres per recordings on average
-- [genre/subgenre distribution](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/blob/master/data_stats/acousticbrainz-mediaeval2017-lastfm-train.stats)
+- [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpRGh6NEdIMVJ3Rk0)
 
 Tagtraum:
 
 - 486740 recordings by 69025 releasegroups
 - 31 genres, 265 subgenres
 - 1.13 genres and 1.72 subgenres per recording on average
-- [genre/subgenre distribution](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/blob/master/data_stats/acousticbrainz-mediaeval2017-tagtraum-train.stats)
+- [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpSTZyeXlQREhsOWc)
 
 The datasets are partially intersected. 
 
