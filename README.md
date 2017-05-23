@@ -62,10 +62,17 @@ a4d017d4-e75b-4eac-8f46-1b000ef407b0    9b1640de-4eb7-3071-b6a3-1c6f76c1a1b4    
 27b7cf35-0238-4316-b2fd-c589a866603a    b6f21355-5e8e-33f7-acbf-03d99e9e90f9    electronic  electronic---bigbeat    electronic---techno
 ```
 
-Each line corresponds to one [recording](https://musicbrainz.org/doc/Recording) (a music track or song), and contains all its ground-truth genre and subgenre labels. `RecordingID` is the [MusicBrainz identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier) of the particular recording. To distinguish between genre and subgenre labels, subgenre strings are compound and contain ```---``` as a separator between a parent genre and an actual subgenre name. For example, ```rock```, ```electronic```, ```jazz``` and ```hip hop``` are genres, while ```electronic---ambient```, ```rock---singersongwriter``` and ```jazz---latinjazz``` are subgenres. 
+Each line corresponds to one [recording](https://musicbrainz.org/doc/Recording) (a music track or song), and contains all its ground-truth genre and subgenre labels. `recordingmbid` is the [MusicBrainz identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier) of the particular recording. To distinguish between genre and subgenre labels, subgenre strings are compound and contain ```---``` as a separator between a parent genre and an actual subgenre name. For example, ```rock```, ```electronic```, ```jazz``` and ```hip hop``` are genres, while ```electronic---ambient```, ```rock---singersongwriter``` and ```jazz---latinjazz``` are subgenres. 
 
-Additionally, we provide `ReleaseGroupID` for each recording, which is a MusicBrainz identifier of a [release group](https://musicbrainz.org/doc/Release_Group) (an album, single, or compilation) it belongs to. This data may be useful if one wants to avoid an "album effect" [4], which consists in potential overestimation of the performance of a classifier when a test set contains music recordings from the same albums as the training set.
+Additionally, we provide `releasegroupmbid` for each recording, which is a MusicBrainz identifier of a [release group](https://musicbrainz.org/doc/Release_Group) (an album, single, or compilation) that it belongs to. This data may be useful if one wants to avoid an "album effect" [4], which consists in potential overestimation of the performance of a classifier when a test set contains music recordings from the same albums as the training set.
 
+Groundtruth files have a header
+
+    recordingmbid   releasegroupmbid    genre1  genre2  ... genren
+    
+to show that the first two columns contain MusicBrainz IDs, and subsequent columns contain genre annotations. As the number of annotations per recording differ, this header contains as many rows as necessary to provide a header to the row with the most annotations. Additionally, rows with fewer genre annotations are padded with the field separator (a tab) to ensure that all rows have the same number of columns. You should ensure that you remove "empty" annotations if your preferred tool to read these files does not do this automatically.
+
+Genre annotations are ordered alphabetically. There is no correlation between the annotations of two different recordings in the same column.
 
 ### Music features
 We provide a dataset of music features precomputed from audio for every music recording. The dataset can be downloaded as an archive. It contains a JSON file with music features for every `RecordingID`. See an [example JSON file](http://acousticbrainz.org/a3b8950a-d1f8-49b9-b88f-89f38726f332/low-level/view?n=0).
