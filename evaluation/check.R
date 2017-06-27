@@ -42,7 +42,7 @@ for(i in seq_along(lines)) {
   }
   parts <- strsplit(lines[i], "\t", fixed = TRUE)[[1]]
   if(length(parts) < 2)
-    stop(paste0("malformed line ", i))
+    stop(paste0("malformed line ", i, " '", lines[i], "'"))
 
   mbids[i] <- parts[1]
   labels <- parts[-1]
@@ -55,23 +55,37 @@ for(i in seq_along(lines)) {
   if(length(labels) != length(unique(labels)))
     stop(paste0("duplicate labels in line ", i, " '", parts[1], "'"))
   # check labels are correct
-  if(!all(labels %in% .vocabularies[[arg.source]]))
-    stop(paste0("incorrect labels in line ", i, ". Perhaps wrong source?"))
+  notInVoc <- which(!labels %in% .vocabularies[[arg.source]])
+  if(length(notInVoc) > 0)
+    stop(paste0("unknown labels in line ", i, ": '",
+                paste(labels[notInVoc], collapse = "', '")
+                ,"'. Perhaps wrong source?"))
 }
 
 # check duplicate mbids
 mbids.t <- table(mbids)
 i <- which(mbids.t>1)
 if(length(i) != 0)
-  stop(paste0("duplicate instance '", names(mbids.t)[i[1]], "'"))
+  stop(paste0("duplicate RecordID '", names(mbids.t)[i[1]], "'"))
 
 # check mbids are correct
 mbids <- names(mbids.t)
-if(length(mbids) != length(.mbids[[arg.source]]))
-  stop(paste0("incorrect number of instances. Expected: ",
-              length(.mbids[[arg.source]]), ". Provided: ", length(mbids), ""))
-i <- which(mbids != .mbids[[arg.source]])
-if(length(i) != 0)
-  stop(paste0("unexpected RecordID '", mbids[i[1]], "'"))
+i <- which(!mbids %in% .mbids[[arg.source]])
+if(length(i) > 0)
+  stop(paste0("unknown RecordID '",
+              paste(mbids[seq(min(10, length(i)))], collapse = "', '"),
+              "'"))
+i <- which(!.mbids[[arg.source]] %in% mbids)
+if(length(i) > 0)
+  stop(paste0("missing RecordID '",
+              paste(.mbids[[arg.source]][seq(min(10, length(i)))], collapse = "', '"),
+              "'"))
 
-cat("\nOK\n")
+# if(length(mbids) != length(.mbids[[arg.source]]))
+#   stop(paste0("incorrect number of instances. Expected: ",
+#               length(.mbids[[arg.source]]), ". Provided: ", length(mbids), ""))
+# i <- which(mbids != .mbids[[arg.source]])
+# if(length(i) != 0)
+#   stop(paste0("unexpected RecordID '", mbids[i[1]], "'"))
+
+cat("OK\n")
