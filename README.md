@@ -1,5 +1,6 @@
 # AcousticBrainz Genre Task 2017: Content-based music genre recognition from multiple sources
 ## Announcements
+- Jun 27: Evaluation scripts are available in our [GitHub repository](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/tree/master/evaluation) (accessible to registered participants)
 - May 11: It took us extra time to process and organize our very large amounts of data. We are almost ready to release development and test datasets within a few days!
 
 ## Task schedule
