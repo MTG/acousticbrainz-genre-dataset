@@ -1,0 +1,29 @@
+# summary per track (all labels, n = 1353213)
+Precision: mean = 0.1451 sd = 0.2738
+   Recall: mean = 0.1454 sd = 0.274
+  F-score: mean = 0.1107 sd = 0.1904
+
+# summary per track (genre labels, n = 1353213)
+Precision: mean = 0.2922 sd = 0.425
+   Recall: mean = 0.2923 sd = 0.425
+  F-score: mean = 0.2754 sd = 0.3958
+
+# summary per track (subgenre labels, n = 1057442)
+Precision: mean = 0.0321 sd = 0.1274
+   Recall: mean = 0.0321 sd = 0.1273
+  F-score: mean = 0.0282 sd = 0.1062
+
+# summary per label (all labels, n = 766)
+Precision: mean = 0.0059 sd = 0.0237
+   Recall: mean = 0.0059 sd = 0.0237
+  F-score: mean = 0.0059 sd = 0.0237
+
+# summary per label (genre labels, n = 21)
+Precision: mean = 0.0632 sd = 0.1169
+   Recall: mean = 0.0632 sd = 0.1168
+  F-score: mean = 0.0632 sd = 0.1168
+
+# summary per label (subgenre labels, n = 745)
+Precision: mean = 0.0043 sd = 0.0107
+   Recall: mean = 0.0043 sd = 0.0107
+  F-score: mean = 0.0043 sd = 0.0107
