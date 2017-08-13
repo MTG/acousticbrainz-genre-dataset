@@ -12,8 +12,8 @@
 - June: Release of a baseline approach
 - May-Mid-August: Work on algorithms
 - Mid-August: Submit runs
-    - 14 August: Run submission
-    - 21 August: Results returned to participants
+    - **14-20 August: Run submission**
+    - **21 August: Results returned to participants**
 - Early September: Working notes paper due
 - 13-15 September MediaEval 2017 Workshop in Dublin
  
