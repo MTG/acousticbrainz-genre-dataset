@@ -3,7 +3,7 @@ Distribution of genres and subgenres in the developement datasets in terms of nu
 
 Subgenre labels are marked with a ```---``` separator identifying a parent genre. 
 
-### AllMusic
+### AllMusic
 
 ```
 genre/subgenre  recordings  releasegroups
@@ -775,7 +775,7 @@ vocal---vocal pop   15581   2536
 vocal---vocalese    283 47
 ```
 
-### Discogs
+### Discogs
 
 ```
 genre/subgenre  recordings  releasegroups
@@ -1096,7 +1096,7 @@ stage & screen---soundtrack 22053   1586
 stage & screen---theme  1860    237
 ```
 
-### Lastfm
+### Lastfm
 
 ```
 genre/subgenre  recordings  releasegroups
@@ -1730,4 +1730,3 @@ world---nationalmusic   468 116
 world---traditional 4281    900
 world---worldfusion 1139    237
 ```
-
