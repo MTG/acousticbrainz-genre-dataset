@@ -167,15 +167,16 @@ metrics.
 \maketitle
 
 \section{Introduction}  Content-based music genre recognition is a popular task
-within the Music Information Retrieval (MIR) community. The goal is to build
-systems that are able to predict genre and subgenre of unknown music recordings
-(songs, tracks) using music features of those recordings automatically computed from
-audio. Achieving success in the task therefore relies on building efficient
-machine learning and audio signal processing algorithms.
+within the Music Information Retrieval (MIR)
+community~\cite{sturm2013classification}. The goal is to build systems that are
+able to predict genre and subgenre of unknown music recordings (songs, tracks)
+using music features of those recordings automatically computed from audio.
+Achieving success in the task therefore relies on building efficient machine
+learning and audio signal processing algorithms.
 
-Although this task is commonly addressed in the MIR research, we realize that it
+\hl{Although this task is commonly addressed in the MIR research, we realize that it
 is often oversimplified while it should be considered in more complexity
-resembling real-world use cases. In particular, such research can be supported
+resembling real-world use cases.} In particular, such research can be supported
 by our recent developments in the context of the
 AcousticBrainz\footnote{\url{https://acousticbrainz.org}} project facilitating
 access to larger datasets of music features~\cite{porter2015acousticbrainz} and
@@ -217,9 +218,9 @@ this knowledge.
 
 \end{itemize} 
 
-Bringing the AcousticBrainz Genre Task to MediaEval, our goal is to benefit from
-contributions and expertise of a broader machine learning and multimedia
-retrieval community.
+%Bringing the AcousticBrainz Genre Task to MediaEval, our goal is to benefit from
+%contributions and expertise of a broader machine learning and multimedia
+%retrieval community.
 
 
 \section{Task Description} 
@@ -316,33 +317,47 @@ frame-level data is available.
 \subsection{Development and Test Datasets}  
 
 In total we provide four development and four test datasets associated with the
-four genre ground truths. Each recording (a track or song) in the
-datasets is identified with a recording MusicBrainz identifier
-(MBID)\footnote{\url{https://musicbrainz.org/doc/MusicBrainz_Identifier}}. All
-identifiers in the test datasets are anonymized for evaluation purposes.
-Recording MBIDs are partially intersected in all four development sets, as well
-as in the test sets. Details on the format of distributed data are available
-online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-
-Genre-Task/data/}} Table~\ref{table:train_stats} provides an overview of the
-development datasets.
+four genre ground truths. They were created by a random split of 
+original full datasets ensuring that:
+\begin{itemize}
+\item no recordings from test sets are also present in any of the development sets;
+\item no recordings from test sets are from the same release groups as the development sets; 
+\item the same genre and subgenre labels are present in both development and test sets for each ground truth;
+\item genre and subgenre labels are represented by at least 40 and 20 recordings from 6 and 3 release groups in development and test sets, respectively.
+\end{itemize}
+The approximate split ratio is 70\% to 15\% of the total number of recordings
+(another 15\% are reserved for further evaluation purposes). Recordings are
+partially intersected in all four development sets as well as in the test sets.
+Table~\ref{table:train_stats} provides an overview of the resulting development 
+datasets. Genre/subgenre taxonomy and distribution in terms of recordings and release groups for all four development datasets are reported online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/data_stats/}}
 
-The development datasets additionally include information about release groups
-to which the recordings belong (release group MBID). This information may be
-useful for participants in order to avoid the ``album
-effect''~\cite{flexer2009album}, which consists in potential overestimation of
+Further details on the format of all distributed data are available
+online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-
+Genre-Task/data/}} Each recording (a track or song) in the datasets is
+identified with a recording MusicBrainz identifier
+(MBID).\footnote{\url{https://musicbrainz.org/doc/MusicBrainz_Identifier}} All
+identifiers in the test datasets are anonymized for evaluation purposes.
+Importantly, our split allows to avoid the ``album
+effect''~\cite{flexer2009album} which consists in a potential overestimation of
 the performance of a classifier when a test set contains music recordings from
-the same albums as the training set. Our random split of recordings into
-development and test datasets ensures that such an effect does not occur. The
-approximate split ratio is 70\% to 15\% (another 15\% are reserved for further
-evaluation purposes).
+the same albums as the training set. The development datasets additionally
+include information about release groups of each recording (release group MBID)
+which may be useful for participants in order to avoid this effect when
+developing their systems.
+
+%The development datasets additionally include information about release groups
+%to which the recordings belong (release group MBID). This information may be
+%useful for participants in order to avoid the ``album
+%effect''~\cite{flexer2009album}, which consists in potential overestimation of
+%the performance of a classifier when a test set contains music recordings from
+%the same albums as the training set. Our random split of recordings into
+%development and test datasets ensures that such an effect does not occur. The
+%approximate split ratio is 70\% to 15\% (another 15\% are reserved for further
+%evaluation purposes).
 
 \hl{TODO}:
 \begin{itemize}
-\item Rephrase the paragraph above, start with explaining the split.
-\item Test datasets contain the same genre/subgenre labels 
 \item What is the size of intersection of datasets? (complete, pairwise)
-\item Give examples of genre/subgenre strings
-\item Add links to genre taxonomies
 \end{itemize}
 
 \begin{table}
