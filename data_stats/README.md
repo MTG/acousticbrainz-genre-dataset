@@ -1,9 +1,10 @@
-# Genres and subgenres in the developement datasets
+## Genres and subgenres in the developement datasets
 Distribution of genres and subgenres in the developement datasets in terms of number of recordings (tracks) and number of release groups (e.g., albums).
 
 Subgenre labels are marked with a ```---``` separator identifying a parent genre. 
 
-## AllMusic
+### AllMusic
+
 ```
 genre/subgenre  recordings  releasegroups
 avant-garde 17810   2456
@@ -774,7 +775,8 @@ vocal---vocal pop   15581   2536
 vocal---vocalese    283 47
 ```
 
-## Discogs
+### Discogs
+
 ```
 genre/subgenre  recordings  releasegroups
 blues   29188   3831
@@ -1094,7 +1096,8 @@ stage & screen---soundtrack 22053   1586
 stage & screen---theme  1860    237
 ```
 
-## Lastfm
+### Lastfm
+
 ```
 genre/subgenre  recordings  releasegroups
 blues   15703   4231
@@ -1426,7 +1429,8 @@ world---afrobeat    561 255
 world---worldfusion 691 371
 ```
 
-## Tagtraum
+### Tagtraum
+
 ```
 genre/subgenre  recordings  releasegroups
 anime   354 81
