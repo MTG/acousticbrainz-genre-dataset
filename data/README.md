@@ -88,6 +88,8 @@ Tagtraum:
 - 1.13 genres and 1.72 subgenres per recording on average
 - [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpSTZyeXlQREhsOWc)
 
+Genre/subgenre taxonomy and distribution in terms of recordings and releasegroups for all four development datasets are reported [here](../data_stats/).
+
 The datasets are partially intersected. 
 
 Note that the data we provide is very large-scale. It includes a large number of music recordings and many of music features for those recordings. Participants are free to use all of the data to train their systems or only its part.
