@@ -326,10 +326,16 @@ original full datasets ensuring that:
 \item genre and subgenre labels are represented by at least 40 and 20 recordings from 6 and 3 release groups in development and test sets, respectively.
 \end{itemize}
 The approximate split ratio is 70\% to 15\% of the total number of recordings
-(another 15\% are reserved for further evaluation purposes). Recordings are
-partially intersected in all four development sets as well as in the test sets.
-Table~\ref{table:train_stats} provides an overview of the resulting development 
-datasets. Genre/subgenre taxonomy and distribution in terms of recordings and release groups for all four development datasets are reported online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/data_stats/}}
+(another 15\% are reserved for further evaluation purposes).
+Table~\ref{table:train_stats} provides an overview of the resulting development
+datasets. Genre/subgenre taxonomy and distribution in terms of number of recordings and
+release groups for all four development datasets are reported
+online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-
+Genre-Task/data_stats/}} Recordings are partially intersected in all four
+development sets as well as in the test sets. The full intersection of all
+development sets contains 247716 recordings while the intersection of the two
+largest development sets, AllMusic and Discogs, contains 831744 recordings.
+
 
 Further details on the format of all distributed data are available
 online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-
@@ -355,11 +361,6 @@ developing their systems.
 %approximate split ratio is 70\% to 15\% (another 15\% are reserved for further
 %evaluation purposes).
 
-\hl{TODO}:
-\begin{itemize}
-\item What is the size of intersection of datasets? (complete, pairwise)
-\end{itemize}
-
 \begin{table}
   \caption{Overview of the development datasets}
   \label{table:train_stats}
@@ -381,6 +382,13 @@ developing their systems.
 \end{tabular}
 \end{table}
 
+\section{Submissions}
+
+Participants are expected to submit predictions for both subtasks. If they only
+want to work on the first subtask, they should submit the same predictions for
+the second subtask. We allow only five evaluation runs (each run includes both
+subtasks). Participants should report whether they used the whole development
+dataset or only its part for every submission.
 
 \section{Evaluation Methodology}
 
@@ -404,11 +412,11 @@ baselines.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-
 Genre-Task/baseline/}} We provide evaluation scripts for
 development purposes.\footnote{Accessible to registered participants.}
 
-
 \section{Conclusions}
-
-TODO: necessary?
-%Rephrase: Details on the methods and results of the participating teams can be found in the working note papers of the MediaEval 2017 workshop proceedings.
+Bringing the AcousticBrainz Genre Task to MediaEval we hope to benefit from
+contributions and expertise of a broader machine learning and multimedia retrieval
+community. We refer to the MediaEval 2017 proceedings for further details on the
+methods and results of teams participating in the task.
 
 %\begin{figure}
 %\includegraphics{fly}
