@@ -69,7 +69,7 @@
 
 %%If you want to use multi-column authors that's fine. Comment out the next lines, and then uncomment below.
 \author{Dmitry Bogdanov\textsuperscript{1}, Alastair Porter\textsuperscript{1}, Julián Urbano\textsuperscript{2}, Hendrik Schreiber\textsuperscript{3}}
-\affiliation{\textsuperscript{1}Music Technology Group, Universitat Pompeu Fabra, Spain\\ \textsuperscript{2}Multimedia Computing Group, Delft University of Technology, Netherlands \\ \textsuperscript{3}Tagtraum Industries Incorporated\\ }
+\affiliation{\textsuperscript{1}Music Technology Group, Universitat Pompeu Fabra, Spain\\ \textsuperscript{2}Multimedia Computing Group, Delft University of Technology, Netherlands \\ \textsuperscript{3}tagtraum industries incorporated\\ }
 \email{dmitry.bogdanov@upf.edu, alastair.porter@upf.edu, j.urbano@tudelft.nl, hs@tagtraum.com}
 
 %\author{G.K.M. Tobin}
@@ -181,9 +181,10 @@ by our recent developments in the context of the
 AcousticBrainz\footnote{\url{https://acousticbrainz.org}} project facilitating
 access to large datasets of music features~\cite{porter2015acousticbrainz} and
 metadata~\cite{porter2016mining}. AcousticBrainz is a community database
-containing MIR features extracted from audio files. Users who contribute to the
+containing music features extracted from audio files. Users who contribute to the
 project run software on their computers to analyze their personal audio
-collections and submit the analysis to the AcousticBrainz database. Additional
+collections and submit the analysis to the AcousticBrainz database.
+Based on the music features, additional
 metadata including genres can then be mined for recordings in the database.
 
 We propose a new genre recognition task using datasets based on AcousticBrainz
@@ -192,24 +193,23 @@ in the following:
 
 \begin{itemize}
 
-\item There are different genre taxonomies and people may not always agree on
-the meaning of genres. Genres labels are probably subjective categories. We want
+\item We want
 to explore how the same music can be annotated differently by different
 communities following different genre taxonomies, and how this should be
 addressed by genre recognition systems.
 
-\item Typically research is done on a small number of broad genre categories.
-In contrast, we propose to consider more specific genres and subgenres and our
+\item Typically, research is done on a small number of broad genre categories.
+In contrast, we propose to consider more specific genres and subgenres. Our
 data contains hundreds of subgenres.
 
 \item Genre recognition is often treated as a single category classification
 problem. %, which is not necessarily the way it should be. O
 Our genre data is
-intrinsically multi-label and so we propose to treat genre recognition as a
+intrinsically multi-label. Therefore we propose to treat genre recognition as a
 multi-label classification problem.
 
-\item Typically research is done on small music collections. Instead, we
-provide a very large dataset counting two million recordings annotated by genres
+\item Oftentimes research is done on small music collections. Instead, we
+provide a very large dataset counting two million recordings annotated with genres
 and subgenres. The downside is that we are not able to provide audio, but only
 precomputed bags of features.
 
@@ -227,34 +227,35 @@ this knowledge.
 \section{Task Description} 
 
 The task invites participants to predict genre and subgenre of unknown music
-recordings (tracks) given automatically computed features of those recordings.
+recordings (tracks) given automatically computed music features of those recordings.
 We provide a training set of such music features taken from the AcousticBrainz
 database~\cite{porter2015acousticbrainz} together with four different ground
-truths of genre and subgenre labels. These ground truths were created using as a
-source four different music metadata websites. Their genre taxonomies vary in
+truths of genre and subgenre labels. These ground truths were created using
+four different music metadata websites as sources. Their genre taxonomies vary in
 class spaces, specificity and breadth. Each source has its own definition for
-its genre labels meaning that these labels may be different between sources.
+its genre labels, i.e.\ the same label may carry a different meaning when used
+by another source.
 Importantly, annotations in each source are multi-label: there may be multiple genre and
 subgenre annotations for the same music recording. It is guaranteed that each
 recording has at least one genre label, while subgenres are not always present.
 
 
-Participants must train model(s) using this data and then generate predictions
-of genre and subgenre labels for a test set
-%We provide a dataset (a development and test set) for every genre ground truth.
-%In total, participants are given four development datasets and all proposed
+Participants must train model(s) using this data and then predict
+genre and subgenre labels for a test set
+%We provide a dataset (a training and test set) for every genre ground truth.
+%In total, participants are given four training datasets and all proposed
 %models are evaluated on four test datasets. 
 %The goal is to create a system that
 %uses provided music features as an input and predicts genre and subgenre labels,
-following genre taxonomy of each ground truth. The task includes two subtasks:
+using the genre taxonomy of each ground truth. The task includes two subtasks:
 
 \begin{itemize}
 
 \item \textbf{Subtask 1: Single-source Classification}. This subtask explores
 conventional systems, each one trained on a single dataset. Participants will
-submit predictions for the test set of each dataset separately, following their
+submit predictions for the test set of each dataset separately, using their
 respective class spaces (genres and subgenres). These predictions will be
-produced by a separate system for each dataset, trained without any information
+produced by a separate system for each dataset, that has been trained without any information
 from the other sources. This subtask will serve as a baseline for Subtask 2.
 
 \item \textbf{Subtask 2: Multi-source Classification}. This subtask explores
@@ -296,9 +297,13 @@ of the data.
 
 \begin{itemize}
 
-\item \textbf{AllMusic}\footnote{\url{https://allmusic.com}} and \textbf{Discogs}\footnote{\url{https://discogs.com}} are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre namespace and taxonomy. We propagated release-level annotations to recordings (tracks) in AcousticBrainz present on those releases to build the datasets.
+\item \textbf{AllMusic}\footnote{\url{https://allmusic.com}} and \textbf{Discogs}\footnote{\url{https://discogs.com}} are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre namespace and taxonomy. To build the datasets we assumed that release-level annotations
+from AllMusic and Discogs correspond to those for recordings (tracks) in AcousticBrainz.
 
-\item \textbf{Lastfm}\footnote{\url{https://last.fm}} and \textbf{Tagtraum}\footnote{\url{https://tagtraum.com}} are based on collaborative music tagging platforms with large amounts of genre labels provided by their users for music recordings (tracks). We have automatically inferred a genre/subgenre taxonomy and annotations from these labels following the algorithm proposed in~\cite{schreiber_improving_2015} and a manual post-processing.
+\item \textbf{Lastfm}\footnote{\url{https://last.fm}} is based on a collaborative music tagging platform with large amounts of genre labels provided by its users for music recordings (tracks).
+\textbf{Tagtraum}\footnote{\url{http://www.tagtraum.com}} is similarly based on genre labels 
+collected from users of the music tagging application beaTunes.\footnote{\url{https://www.beatunes.com}}
+We have automatically inferred a genre/subgenre taxonomy and annotations from these labels following the algorithm proposed in~\cite{schreiber_improving_2015} and a manual post-processing.
 
 \end{itemize}
 We provide information about genre/subgenre tree hierarchies for every ground
@@ -326,7 +331,7 @@ frame-level data is available.
 
 \subsection{Development and Test Datasets}  
 
-In total we provide four development and four test datasets associated with the
+In total we provide four development (training) and four test datasets associated with the
 four genre ground truths. They were created by a random split of 
 the full data ensuring that:
 \begin{itemize}
@@ -339,29 +344,29 @@ The approximate split ratio is 70\% to 15\% of the total number of recordings
 (another 15\% were reserved for further evaluation purposes).
 Table~\ref{table:train_stats} provides an overview of the resulting development
 sets. Genre/subgenre taxonomy and their distribution in the development sets in terms of number of recordings and
-release groups %for all four development sets 
+release groups %for all four training sets 
 are reported online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/data_stats/}} 
 Recordings are partially intersected in all four
 development sets as well as in the test sets. The full intersection of all
-development sets (recordings annotated by all four ground truths) contains 247716 recordings while the intersection of the two
+development sets (recordings annotated by all four ground truths) contains 247,716 recordings while the intersection of the two
 largest %development 
-sets, AllMusic and Discogs, contains 831744 recordings.
+sets, AllMusic and Discogs, contains 831,744 recordings.
 
 The details on the format of all distributed data are available
 online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/data/}} 
-Each recording (a track or song) in the development sets is
-identified with a %recording 
+Each recording in the development sets is
+identified by a %recording 
 MusicBrainz identifier (MBID).\footnote{\url{https://musicbrainz.org/doc/MusicBrainz_Identifier}} 
 %All identifiers in the test datasets are anonymized for evaluation purposes.
 Importantly, our split allows to avoid the ``album
-effect''~\cite{flexer2009album} which consists in a potential overestimation of
+effect''~\cite{flexer2009album}, which leads to a potential overestimation of
 the performance of a system when a test set contains recordings from
-the same albums as the training set. 
+the same albums as the development set. 
 %For this reason we also included information
 %about release groups of each recording in the development sets to help participants
 %to avoid this effect when developing their systems.
 The development sets additionally
-include information about release groups of each recording 
+include information about release groups of each recording, 
 %(release group MBID)
 which may be useful for participants in order to avoid this effect when
 developing their systems.
@@ -371,7 +376,7 @@ developing their systems.
 %useful for participants in order to avoid the ``album
 %effect''~\cite{flexer2009album}, which consists in potential overestimation of
 %the performance of a classifier when a test set contains music recordings from
-%the same albums as the training set. Our random split of recordings into
+%the same albums as the development set. Our random split of recordings into
 %development and test datasets ensures that such an effect does not occur. The
 %approximate split ratio is 70\% to 15\% (another 15\% are reserved for further
 %evaluation purposes).
@@ -386,8 +391,8 @@ developing their systems.
     Type & Explicit & Explicit & Tags & Tags \\
     Annotation level & Release & Release & Track & Track \\
   \midrule
-    Tracks (recordings) & 1353213 & 904944 & 566710 & 486740 \\
-    Release groups & 163654 & 118475 & 115161 & 69025 \\
+    Tracks (recordings) & 1,353,213 & 904,944 & 566,710 & 486,740 \\
+    Release groups & 163,654 & 118,475 & 115,161 & 69,025 \\
   \midrule
     Genres & 21 & 15 & 30 & 31 \\
     Subgenres & 745 & 300 & 297 & 265 \\
@@ -403,7 +408,7 @@ Participants are expected to submit predictions for both subtasks. If they only
 want to work on the first subtask, they should submit the same predictions for
 the second subtask. We allow only five evaluation runs (each run includes both
 subtasks). Participants should report whether they used the whole development
-dataset or only its part for every submission.
+dataset or only parts for every submission.
 
 %\section{Evaluation Methodology}
 
@@ -461,10 +466,11 @@ methods and results of teams participating in the task.
 
 \begin{acks} 
 
-We thank all contributors to AcousticBrainz and Tagtraum. This research has
-received funding from the European Union’s Horizon 2020 research and innovation
+We thank all contributors to AcousticBrainz. This research has
+received funding from the European Union's Horizon 2020 research and innovation
 programme under grant agreement No 688382 (AudioCommons).
-
+We also thank tagtraum industries for providing the Tagtraum
+genre annotations.
 \end{acks}
 
 \bibliographystyle{ACM-Reference-Format}
