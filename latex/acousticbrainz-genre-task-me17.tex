@@ -289,7 +289,7 @@ from four different online metadata sources:
 \item \textbf{AllMusic}~\cite{allmusic} %\footnote{\url{https://allmusic.com}}
 and \textbf{Discogs}~\cite{discogs} %\footnote{\url{https://discogs.com}}
 are based on editorial metadata databases maintained by music experts and enthusiasts. These sources contain explicit genre/subgenre annotations of music releases (albums) following a predefined genre taxonomy. To build the datasets we assumed that release-level annotations
-correspond to all recordings in AcousticBrainz for that album.
+correspond to all recordings in AcousticBrainz for that release.
 
 \item \textbf{Lastfm}~\cite{lastfm} %\footnote{\url{https://last.fm}}
 is based on a collaborative music tagging platform with large amounts of genre labels provided by its users for music recordings.
@@ -324,8 +324,7 @@ features are taken from the AcousticBrainz database and were
 extracted from audio using Essentia, an open-source library for music audio
 analysis~\cite{bogdanov2013essentia}. The provided features
 %are grouped into categories (low-level, rhythm, and tonal) and
-are explained online.
-\footnote{\url{http://essentia.upf.edu/documentation/streaming_extractor_music.html}} Only statistical
+are explained online.\footnote{\url{http://essentia.upf.edu/documentation/streaming_extractor_music.html}} Only statistical
 characterization of time frames is provided (bag of features), that is, no
 frame-level data is available.
 
@@ -372,7 +371,7 @@ development sets contains 247,716 recording, while the intersection of the two
 largest %development
 sets, AllMusic and Discogs, contains 831,744 recordings.
 
-All data are published in JSON format; details about format are available
+All data are published in JSON and TSV formats; details about format are available
 online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/data/}}
 Each recording in the development sets is
 identified by a %recording
@@ -429,8 +428,7 @@ compute precision, recall and F-score at different levels:
 The ground truth does not necessarily contain subgenre annotations for some
 recordings, so we only considered recordings containing subgenres for
 the evaluation at the subgenre level. An example can be found online in the
-summaries of random baselines.
-\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/baseline/}}
+summaries of random baselines.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/baseline/}}
 We also provided evaluation scripts for development purposes.
 
 \section{Conclusions}
