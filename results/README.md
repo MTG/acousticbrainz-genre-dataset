@@ -1,4 +1,14 @@
 # Results
+
+Participating teams:
+- Baseline
+- DBIS
+- ICSI
+- JKU
+- KART
+- SAM-IRIT
+
+
 ## Per-track average metrics
 ### Per-track Precision vs Recall for all labels
 
@@ -18,8 +28,7 @@
 
 ![Lastfm - per track - subgenre labels](png/320x240_lastfm_Rtracksub.png) ![Tagtraum - per track - subgenre labels](png/320x240_tagtraum_Rtracksub.png)
 
-
-## Per-label average metrics
+## Per-label average metrics
 ### Per-label Precision vs Recall for all labels
 
 ![AllMusic - per label - all labels](png/320x240_allmusic_Rlabelall.png) ![Discogs - per label - all labels](png/320x240_discogs_Rlabelall.png)
