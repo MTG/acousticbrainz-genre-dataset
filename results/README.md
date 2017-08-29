@@ -1,5 +1,5 @@
 # Results
-## Per-track metrics
+## Per-track average metrics
 ### Per-track Precision vs Recall for all labels
 
 ![AllMusic - per track - all labels](png/320x240_allmusic_Rtrackall.png) ![Discogs - per track - all labels](png/320x240_discogs_Rtrackall.png)
@@ -19,7 +19,7 @@
 ![Lastfm - per track - subgenre labels](png/320x240_lastfm_Rtracksub.png) ![Tagtraum - per track - subgenre labels](png/320x240_tagtraum_Rtracksub.png)
 
 
-## Per-label metrics
+## Per-label average metrics
 ### Per-label Precision vs Recall for all labels
 
 ![AllMusic - per label - all labels](png/320x240_allmusic_Rlabelall.png) ![Discogs - per label - all labels](png/320x240_discogs_Rlabelall.png)
