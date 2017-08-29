@@ -1,13 +1,20 @@
 # Results
 
-Participating teams:
-- Baseline
-- DBIS
-- ICSI
-- JKU
-- KART
-- SAM-IRIT
+The final submissions are (115 runs):
 
+* `baseline` (8 runs): 2 runs for task1 on all 4 datasets.
+* `dbis` (40 runs): 5 runs for task1 and 5 runs for task2 on all 4 datasets.
+* `icsi` (15 runs): 5 runs for task1 on 3 datasets (no `allmusic`).
+* `jku` (32 runs): 3 runs for task1 and 5 runs for task2 on all 4 datasets.
+* `kart` (16 runs): 4 runs for task1 on all 4 datasets.
+* `samirit` (4 runs): 1 run for task1 on all 4 datasets.
+
+For the baseline:
+
+* `run1` is random, following the distribution of labels found in the development sets.
+* `run2` always predicts the most popular genre in the development set.
+
+The solid grey lines mark the performance of the random baseline, and the dotted lines mark the performance of the popularity-based baseline. The numbers indicate whether the run belongs to task1 or task2.
 
 ## Per-track average metrics
 ### Per-track Precision vs Recall for all labels
