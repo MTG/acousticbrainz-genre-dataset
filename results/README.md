@@ -16,6 +16,8 @@ For the baseline:
 
 The solid grey lines mark the performance of the random baseline, and the dotted lines mark the performance of the popularity-based baseline. The numbers indicate whether the run belongs to task1 or task2.
 
+All results are also available in a [CSV file](allscores.csv). 
+
 ## Per-track average metrics
 ### Per-track Precision vs Recall for all labels
 
