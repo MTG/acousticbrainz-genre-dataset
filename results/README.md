@@ -18,7 +18,7 @@ The solid grey lines mark the performance of the random baseline, and the dotted
 
 All results are also available in a [CSV file](allscores.csv). 
 
-## Per-track average metrics
+## Per-track average scores
 ### Per-track Precision vs Recall for all labels
 
 ![AllMusic - per track - all labels](png/320x240_allmusic_Rtrackall.png) ![Discogs - per track - all labels](png/320x240_discogs_Rtrackall.png)
@@ -37,7 +37,7 @@ All results are also available in a [CSV file](allscores.csv).
 
 ![Lastfm - per track - subgenre labels](png/320x240_lastfm_Rtracksub.png) ![Tagtraum - per track - subgenre labels](png/320x240_tagtraum_Rtracksub.png)
 
-## Per-label average metrics
+## Per-label average scores
 ### Per-label Precision vs Recall for all labels
 
 ![AllMusic - per label - all labels](png/320x240_allmusic_Rlabelall.png) ![Discogs - per label - all labels](png/320x240_discogs_Rlabelall.png)
@@ -85,8 +85,3 @@ All results are also available in a [CSV file](allscores2.csv).
 
 ![F-score - per label - all labels](png2/320x240_Flabelall.png) ![F-score - per label - genre labels](png2/320x240_Flabelgen.png) 
 
-# Conclusions
-
-As this is our first year, we are still open to decide the future direction for the tasks. We, therefore, considered two options in evaluation:
-- Evaluation ignoring hierarchical relations between genres and subgenres (main evaluation). This is suitable in the case we want systems to be able to predict broad-level genres and finer subgenres while we might be not sure in the appropriateness of the ground-truth genre hierarchies of our genre sources.
-- Evaluation with hierarchy-based adjustment inferring parent genre for predicted subgenres in the case participants did not explicitly provide so.
