@@ -64,26 +64,26 @@ We conducted an additional evaluation with an adjustment for such relations, bec
 In these cases, we expanded all predictions to also include the corresponding genres, even if they were missing in the original submissions. Such correction may increase genre recall and alter precision, because more genres will be present in predictions, including relevant and irrelevant ones.
 Note that the results at the subgenre label do not change.
 
-The plots below demonstrate F-score, Precision and Recall scores with and without label expansion. The inspection of these results revealed no significant difference in performance. 
+The plots below demonstrate Precision, Recall and F-scores  with and without label expansion. The inspection of these results revealed no significant difference in performance. 
 Recall changes very little, with the exception of ICSI. Still, its F-scores remain virtually the same due to the low precision.
 
 All results are also available in a [CSV file](allscores2.csv). 
 
 ### Per-track F-score, Precision and Recall 
 
-![F-score - per track - all labels](png2/320x240_Ftrackall.png) ![F-score - per track - genre labels](png2/320x240_Ftrackgen.png) 
-
 ![Precision - per track - all labels](png2/320x240_Ptrackall.png) ![Precision - per track - genre labels](png2/320x240_Ptrackgen.png) 
 
 ![Recall - per track - all labels](png2/320x240_Rtrackall.png) ![Recall - per track - genre labels](png2/320x240_Rtrackgen.png) 
 
-### Per-label F-score, Precision and Recall
+![F-score - per track - all labels](png2/320x240_Ftrackall.png) ![F-score - per track - genre labels](png2/320x240_Ftrackgen.png) 
 
-![F-score - per label - all labels](png2/320x240_Flabelall.png) ![F-score - per label - genre labels](png2/320x240_Flabelgen.png) 
+### Per-label F-score, Precision and Recall
 
 ![Precision - per label - all labels](png2/320x240_Plabelall.png) ![Precision - per label - genre labels](png2/320x240_Plabelgen.png) 
 
 ![Recall - per label - all labels](png2/320x240_Rlabelall.png) ![Recall - per label - genre labels](png2/320x240_Rlabelgen.png) 
+
+![F-score - per label - all labels](png2/320x240_Flabelall.png) ![F-score - per label - genre labels](png2/320x240_Flabelgen.png) 
 
 # Conclusions
 
