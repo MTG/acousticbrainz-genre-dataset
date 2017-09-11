@@ -56,8 +56,8 @@ All results are also available in a [CSV file](allscores.csv).
 
 ![Lastfm - per label - subgenre labels](png/320x240_lastfm_Rlabelsub.png) ![Tagtraum - per label - subgenre labels](png/320x240_tagtraum_Rlabelsub.png)
 
-
 # Results adjusted by genre-subgenre hierarchies
+
 The submissions to the task were required to include all predicted genres and subgenres explicitly. We, therefore, did not explicitly consider hierarchical relations between them in our main evaluation.
 
 We conducted an additional evaluation with an adjustment for such relations, as we have found that the submissions did not necessary followed our requirement. To this end, for all predicted subgenres we also considered their parent genres as predicted even if these genres were missing in the original submissions. Such correction may increase genre recall and alter precision as more genres will be present in predictions, including relevant and irrelevant ones.
@@ -66,30 +66,21 @@ The inspection of these results revealed no significant difference in performanc
 
 The obtained results are very similar. Recall changes very little. The only observed significant difference was in the performance of ICSI, which got much more recall on genres after adjustment. Still, its precision was so low that the F-measure almost did not change.
 
-### Per-track F-score, Precision and Recall for all labels
-![F-score - per track - all labels](png2/newold_Ftrackall.png) 
-![Precision - per track - all labels](png2/newold_Ptrackall.png) ![Recall - per track - all labels](png2/newold_Rtrackall.png) 
+### Per-track F-score, Precision and Recall 
 
-### Per-track F-score, Precision and Recall for genres
-![F-score - per track - genres](png2/newold_Ftrackgen.png) 
-![Precision - per track - genres](png2/newold_Ptrackgen.png) ![Recall - per track - genres](png2/newold_Rtrackgen.png) 
+![F-score - per track - all labels](png2/320x240_Ftrackall.png) ![F-score - per track - genre labels](png2/320x240_Ftrackgen.png) 
 
-### Per-track F-score, Precision and Recall for subgenres
-![F-score - per track - subgenres](png2/newold_Ftracksub.png) 
-![Precision - per track - subgenres](png2/newold_Ptracksub.png) ![Recall - per track - subgenres](png2/newold_Rtracksub.png) 
+![Precision - per track - all labels](png2/320x240_Ptrackall.png) ![Precision - per track - genre labels](png2/320x240_Ptrackgen.png) 
 
-### Per-label F-score, Precision and Recall for all labels
-![F-score - per label - all labels](png2/newold_Flabelall.png) 
-![Precision - per label - all labels](png2/newold_Plabelall.png) ![Recall - per label - all labels](png2/newold_Rlabelall.png) 
+![Recall - per track - all labels](png2/320x240_Rtrackall.png) ![Recall - per track - genre labels](png2/320x240_Rtrackgen.png) 
 
-### Per-label F-score, Precision and Recall for genres
-![F-score - per label - genres](png2/newold_Flabelgen.png) 
-![Precision - per label - genres](png2/newold_Plabelgen.png) ![Recall - per label - genres](png2/newold_Rlabelgen.png) 
+### Per-label F-score, Precision and Recall
 
-### Per-label F-score, Precision and Recall for subgenres
-![F-score - per label - subgenres](png2/newold_Flabelsub.png) 
-![Precision - per label - subgenres](png2/newold_Plabelsub.png) ![Recall - per label - subgenres](png2/newold_Rlabelsub.png) 
+![F-score - per label - all labels](png2/320x240_Flabelall.png) ![F-score - per label - genre labels](png2/320x240_Flabelgen.png) 
 
+![Precision - per label - all labels](png2/320x240_Plabelall.png) ![Precision - per label - genre labels](png2/320x240_Plabelgen.png) 
+
+![Recall - per label - all labels](png2/320x240_Rlabelall.png) ![Recall - per label - genre labels](png2/320x240_Rlabelgen.png) 
 
 # Conclusions
 
