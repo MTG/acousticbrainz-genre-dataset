@@ -58,13 +58,16 @@ All results are also available in a [CSV file](allscores.csv).
 
 # Results adjusted by genre-subgenre hierarchies
 
-The submissions to the task were required to include all predicted genres and subgenres explicitly. We, therefore, did not explicitly consider hierarchical relations between them in our main evaluation.
+The submissions to the task were required to include all predicted genres and subgenres explicitly. Therefore, we did not explicitly consider hierarchical relations in the evaluation.
 
-We conducted an additional evaluation with an adjustment for such relations, as we have found that the submissions did not necessary followed our requirement. To this end, for all predicted subgenres we also considered their parent genres as predicted even if these genres were missing in the original submissions. Such correction may increase genre recall and alter precision as more genres will be present in predictions, including relevant and irrelevant ones.
+We conducted an additional evaluation with an adjustment for such relations, because most submissions did not explicitly predict the genres of the predicted subgenres.
+In these cases, we expanded all predictions to also include the corresponding genres, even if they were missing in the original submissions. Such correction may increase genre recall and alter precision, because more genres will be present in predictions, including relevant and irrelevant ones.
+Note that the results at the subgenre label do not change.
 
-The inspection of these results revealed no significant difference in performance of the submitted systems. The plots below demonstrate F-score, precision and recall changes before/after adjustment.
+The plots below demonstrate F-score, Precision and Recall scores with and without label expansion. The inspection of these results revealed no significant difference in performance. 
+Recall changes very little, with the exception of ICSI. Still, its F-scores remain virtually the same due to the low precision.
 
-The obtained results are very similar. Recall changes very little. The only observed significant difference was in the performance of ICSI, which got much more recall on genres after adjustment. Still, its precision was so low that the F-measure almost did not change.
+All results are also available in a [CSV file](allscores2.csv). 
 
 ### Per-track F-score, Precision and Recall 
 
