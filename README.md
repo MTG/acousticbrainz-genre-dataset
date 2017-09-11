@@ -2,7 +2,8 @@
 
 ## Announcements
 
-- July 7: [Evaluation summaries](baseline/) for random baselines are available.
+- Sep 11: [Evaluation Results](results/) are available for all submitted runs.
+- Jul 7: [Evaluation summaries](baseline/) for random baselines are available.
 - Jun 27: Evaluation scripts are available in the [GitHub repository](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/tree/master/evaluation) (accessible to registered participants)
 - May 11: It took us extra time to process and organize our very large amounts of data. We are almost ready to release development and test datasets within a few days!
 
@@ -104,8 +105,8 @@ Please follow the general instructions for the working notes paper. Remember to 
 
 
 ## Task Organizers
-- Dmitry Bogdanov, Music Technology Group, Universitat Pompeu Fabra, Spain (first.last @upf.edu)
-- Alastair Porter, Music Technology Group, Universitat Pompeu Fabra, Spain (first.last @upf.edu)
+- Dmitry Bogdanov, Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
+- Alastair Porter, Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
 - Julián Urbano, Multimedia Computing Group, Delft University of Technology, Netherlands
 - Hendrik Schreiber, tagtraum industries incorporated, USA
 
