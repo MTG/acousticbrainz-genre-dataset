@@ -107,11 +107,11 @@ Please follow the general instructions for the working notes paper. Remember to 
 - Dmitry Bogdanov, Music Technology Group, Universitat Pompeu Fabra, Spain (first.last @upf.edu)
 - Alastair Porter, Music Technology Group, Universitat Pompeu Fabra, Spain (first.last @upf.edu)
 - Julián Urbano, Multimedia Computing Group, Delft University of Technology, Netherlands
-- Hendrik Schreiber, Tagtraum Industries Incorporated, USA
+- Hendrik Schreiber, tagtraum industries incorporated, USA
 
 ## Acknowledgments
 
-[AcousticBrainz](https://acousticbrainz.org/), [Audio Commons](http://audiocommons.org/) and [Tagtraum](http://www.tagtraum.com/)
+[AcousticBrainz](https://acousticbrainz.org/), [Audio Commons](http://audiocommons.org/) and [tagtraum industries](http://www.tagtraum.com/)
 
 <img src="img/audio-commons-icon_64px.jpg" height="64" hspace="20"><img src="img/acousticbrainz_logo_short_horizontal.png" height="64" hspace="20"><img src="img/tagtraum_logo_small_w_g@2x.png" height="64" hspace="20">
 
