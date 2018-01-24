@@ -3,11 +3,11 @@
 The final submissions are (115 runs):
 
 * `baseline` (8 runs): 2 runs for task1 on all 4 datasets.
-* `dbis` (40 runs): 5 runs for task1 and 5 runs for task2 on all 4 datasets.
-* `icsi` (15 runs): 5 runs for task1 on 3 datasets (no `allmusic`).
-* `jku` (32 runs): 3 runs for task1 and 5 runs for task2 on all 4 datasets.
-* `kart` (16 runs): 4 runs for task1 on all 4 datasets.
-* `samirit` (4 runs): 1 run for task1 on all 4 datasets.
+* `dbis` [pdf](papers/dbis-2017.pdf) (40 runs): 5 runs for task1 and 5 runs for task2 on all 4 datasets.
+* `icsi` [pdf](papers/icsi-2017.pdf) (15 runs): 5 runs for task1 on 3 datasets (no `allmusic`).
+* `jku` [pdf](papers/jku-2017.pdf) (32 runs): 3 runs for task1 and 5 runs for task2 on all 4 datasets.
+* `kart` [pdf](papers/kart-2017.pdf) (16 runs): 4 runs for task1 on all 4 datasets.
+* `samirit` [pdf](papers/samirit-2017.pdf)(4 runs): 1 run for task1 on all 4 datasets.
 
 For the baseline:
 
@@ -17,6 +17,8 @@ For the baseline:
 The solid grey lines mark the performance of the random baseline, and the dotted lines mark the performance of the popularity-based baseline. The numbers indicate whether the run belongs to task1 or task2.
 
 All results are also available in a [CSV file](allscores.csv). 
+
+See the complete MediaEval2017 procedings including the working note papers for all submissions [here](http://ceur-ws.org/Vol-1984/). 
 
 ## Per-track average scores
 ### Per-track Precision vs Recall for all labels
