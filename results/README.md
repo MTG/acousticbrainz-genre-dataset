@@ -3,11 +3,11 @@
 The final submissions are (115 runs):
 
 * `baseline` (8 runs): 2 runs for task1 on all 4 datasets.
-* `dbis` [pdf](papers/dbis-2017.pdf) (40 runs): 5 runs for task1 and 5 runs for task2 on all 4 datasets.
-* `icsi` [pdf](papers/icsi-2017.pdf) (15 runs): 5 runs for task1 on 3 datasets (no `allmusic`).
-* `jku` [pdf](papers/jku-2017.pdf) (32 runs): 3 runs for task1 and 5 runs for task2 on all 4 datasets.
-* `kart` [pdf](papers/kart-2017.pdf) (16 runs): 4 runs for task1 on all 4 datasets.
-* `samirit` [pdf](papers/samirit-2017.pdf)(4 runs): 1 run for task1 on all 4 datasets.
+* [`dbis`](papers/dbis-2017.pdf) (40 runs): 5 runs for task1 and 5 runs for task2 on all 4 datasets.
+* [`icsi`](papers/icsi-2017.pdf) (15 runs): 5 runs for task1 on 3 datasets (no `allmusic`).
+* [`jku`](papers/jku-2017.pdf) (32 runs): 3 runs for task1 and 5 runs for task2 on all 4 datasets.
+* [`kart`](papers/kart-2017.pdf) (16 runs): 4 runs for task1 on all 4 datasets.
+* [`samirit`](papers/samirit-2017.pdf)(4 runs): 1 run for task1 on all 4 datasets.
 
 For the baseline:
 
