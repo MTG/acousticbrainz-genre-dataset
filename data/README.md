@@ -52,6 +52,8 @@ The **test data** contains **four archives of music features for recordings with
 
 All data is compressed with bzip2. Checksums are provided to ensure that you have correctly downloaded the archives.
 
+### Download
+
 The development and test data for Discogs, Lastfm and Tagtraum is publicly available [here](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U).
 
 The development data (genre ground truth) and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
