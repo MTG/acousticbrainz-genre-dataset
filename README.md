@@ -1,23 +1,17 @@
-# AcousticBrainz Genre Task 2017: Content-based music genre recognition from multiple sources
+# AcousticBrainz Genre Task 2018: Content-based music genre recognition from multiple sources
 
 ## Announcements
 
-- Sep 11: [Evaluation Results](results/) are available for all submitted runs.
-- Jul 7: [Evaluation summaries](baseline/) for random baselines are available.
-- Jun 27: Evaluation scripts are available in the [GitHub repository](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/tree/master/evaluation) (accessible to registered participants)
-- May 11: It took us extra time to process and organize our very large amounts of data. We are almost ready to release development and test datasets within a few days!
-
 ## Tentative Task Schedule
+- June 1: Release of test datasets from [the 2017's challenge](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task).
+- June-August: Work on algorithms
+- September: Submissions are open
+- **October 3: Final submission due**
+- **October 10: Results returned to participants**
+- October 17: Working notes paper submission due
+- October 29-31: MediaEval 2018 Workshop held near Nice, France
 
-- May 18th: **Development and test datasets released on May 18, 2017**
-- June: Release of a baseline approach
-- May-Mid-August: Work on algorithms
-- Mid-August: Submit runs
-    - **14-20 August: Run submission**
-    - **21 August: Results returned to participants**
-- Early September: Working notes paper due
-- 13-15 September MediaEval 2017 Workshop in Dublin
- 
+
 ## Task description
 
 This task invites participants to **predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings**. We provide a training set of such audio features taken from the [AcousticBrainz](http://acousticbrainz.org/) database [1] together with **four different ground truths of genre and subgenre labels**. These genre datasets were created using as a source four different music metadata websites. Their genre taxonomies vary in class spaces, specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions of genre and subgenre labels for a test set.
@@ -69,7 +63,7 @@ Each line corresponds to an anonymized RecordingID from a test dataset and shoul
 
 Participants should report whether they used the whole development dataset or only its part for every submission.
 
-Participants can ensure their submission format is correct running the provided [check script](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/tree/master/evaluation) (accessible to registered participants). 
+Participants can ensure their submission format is correct running the provided [check script](https://github.com/multimediaeval/2018-AcousticBrainz-Genre-Task/tree/master/evaluation) (accessible to registered participants).
 
 ## Evaluation Methodology
 
@@ -84,7 +78,7 @@ The evaluation will be carried out for each dataset separately. In particular, w
 
 Note that the ground truth does not necessarily contain subgenre annotations for some recordings. Therefore, only recordings containing subgenres will be considered for the evaluation on the subgenre level. An example can be found in the [summaries of random baselines](baseline/).
 
-[Evaluation scripts](https://github.com/multimediaeval/2017-AcousticBrainz-Genre-Task/tree/master/evaluation) are provided for development (accessible to registered participants).
+[Evaluation scripts](https://github.com/multimediaeval/2018-AcousticBrainz-Genre-Task/tree/master/evaluation) are provided for development (accessible to registered participants).
  
 ## Working Notes and Overview Paper
 
@@ -117,3 +111,8 @@ Please follow the general instructions for the working notes paper. Remember to 
 <img src="img/audio-commons-icon_64px.jpg" height="64" hspace="20"><img src="img/acousticbrainz_logo_short_horizontal.png" height="64" hspace="20"><img src="img/tagtraum_logo_small_w_g@2x.png" height="64" hspace="20">
 
 This research has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 688382.
+
+
+## Previous years
+
+[AcousticBrainz Genre Task 2017](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/)
