@@ -52,7 +52,7 @@
 \acmISBN{}
 
 %Conference
-\acmConference[MediaEval'17]{Multimedia Evaluation Workshop}{13-15 September 2017}{Dublin, Ireland}
+\acmConference[MediaEval'18]{Multimedia Evaluation Workshop}{29-31 October 2018}{France}
 \acmYear{}
 \copyrightyear{}
 
@@ -60,7 +60,7 @@
 
 
 \begin{document}
-\title{The MediaEval 2017 AcousticBrainz Genre Task:\\Content-based Music Genre Recognition from Multiple Sources}
+\title{The MediaEval 2018 AcousticBrainz Genre Task:\\Content-based Music Genre Recognition from Multiple Sources}
 %\titlenote{Produces the permission block, and
 %  copyright information}
 %\subtitle{Extended Abstract}
@@ -106,7 +106,7 @@
 \begin{abstract}
 
 This paper provides an overview of the AcousticBrainz Genre Task organized as
-part of the MediaEval 2017 Benchmarking Initiative for Multimedia Evaluation.
+part of the MediaEval 2018 Benchmarking Initiative for Multimedia Evaluation.
 The task is focused on content-based music genre recognition using genre
 annotations from multiple sources and large-scale music features data available
 in the AcousticBrainz database. The goal of our task is to explore how the same
@@ -187,8 +187,7 @@ collections and submit music features to the AcousticBrainz database.
 Based on these features, additional
 metadata including genres can then be mined for recordings in the database.
 
-We propose a new genre recognition task using datasets based on AcousticBrainz
-for MediaEval 2017. This task is different from a typical genre recognition task
+Since MediaEval 2017, we propose a new genre recognition task using datasets based on AcousticBrainz. This task is different from a typical genre recognition task
 in the following ways:
 
 \begin{itemize}
@@ -331,9 +330,7 @@ frame-level data is available.
 
 \subsection{Development and Test Datasets}
 
-In total we provide four development (training+validation) and four test datasets associated with the
-four genre ground truths. They were created by a random split of
-the full data ensuring that:
+\hl{In total we provide four development (training+validation), four test datasets, and four additional validation sets (used as test sets in the previous edition of the task\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/results/}}) associated with the four genre ground truths.} They were created by a random split of the full data ensuring that:
 \begin{itemize}
 \item no recordings in the test sets are present in any of the development sets;
 \item no recordings in the test sets are from the same release groups (e.g., albums, singles, EPs) present in the development sets;
@@ -362,18 +359,21 @@ the full data ensuring that:
 \end{tabular}}
 \end{table}
 
-The approximate split ratios are 70\% for training and 15\% for testing (another 15\% was reserved for future evaluation purposes).
+
+\hl{The approximate split ratios are 70\% for training, 15\% for testing. The rest 15\% of the data (following the same split principle) was previously used as test sets in the 2017 edition of the task and is now available for participants for validation as a reference for benchmarking across all current and future editions of the task.}
+
+
 Table~\ref{table:train_stats} provides an overview of the resulting development
 sets. Details on the genre/subgenre taxonomy and their distribution in the development sets in terms of number of recordings and
 release groups %for all four training sets
-are reported online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/data_stats/}}
+are reported online.\footnote{\url{https://multimediaeval.github.io/2018-AcousticBrainz-Genre-Task/data_stats/}}
 Recordings are partially intersected (annotated by all four ground truths) in the development and test sets. The full intersection of all
 development sets contains 247,716 recording, while the intersection of the two
 largest %development
 sets, AllMusic and Discogs, contains 831,744 recordings.
 
 All data are published in JSON and TSV formats; details about format are available
-online.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/data/}}
+online.\footnote{\url{https://multimediaeval.github.io/2018-AcousticBrainz-Genre-Task/data/}}
 Each recording in the development sets is
 identified by a %recording
 MusicBrainz ID (MBID)\footnote{\url{https://musicbrainz.org/doc/MusicBrainz_Identifier}}, which can be used by participants to gather related data.
@@ -429,13 +429,13 @@ compute precision, recall and F-score at different levels:
 The ground truth does not necessarily contain subgenre annotations for some
 recordings, so we only considered recordings containing subgenres for
 the evaluation at the subgenre level. An example can be found online in the
-summaries of random baselines.\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/baseline/}}
+summaries of random baselines.\footnote{\url{https://multimediaeval.github.io/2018-AcousticBrainz-Genre-Task/baseline/}}
 We also provided evaluation scripts for development purposes.
 
 \section{Conclusions}
 Bringing the AcousticBrainz Genre Task to MediaEval we hope to benefit from
 contributions and expertise of a broader machine learning and multimedia retrieval
-community. We refer to the MediaEval 2017 proceedings for further details on the
+community. We refer to the MediaEval 2018 proceedings for further details on the
 methods and results of teams participating in the task.
 
 %\begin{figure}
@@ -475,6 +475,6 @@ genre annotations.
 
 \bibliographystyle{ACM-Reference-Format}
 \def\bibfont{\small} % comment this line for a smaller fontsize
-\bibliography{acousticbrainz-genre-task-me17}
+\bibliography{acousticbrainz-genre-task-me18}
 
 \end{document}
