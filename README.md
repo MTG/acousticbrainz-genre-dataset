@@ -3,7 +3,7 @@
 ## Announcements
 
 ## Tentative Task Schedule
-- June 1: Release of test datasets from [the 2017's challenge](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task).
+- June 1: Release of validation datasets (test datasets from [the 2017's challenge](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task)).
 - June-August: Work on algorithms
 - September: Submissions are open
 - **October 3: Final submission due**
@@ -16,7 +16,7 @@
 
 This task invites participants to **predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings**. We provide a training set of such audio features taken from the [AcousticBrainz](http://acousticbrainz.org/) database [1] together with **four different ground truths of genre and subgenre labels**. These genre datasets were created using as a source four different music metadata websites. Their genre taxonomies vary in class spaces, specificity and breadth. Each source has its own definition for its genre labels meaning that these labels may be different between sources. Participants must train model(s) using this data and then generate predictions of genre and subgenre labels for a test set.
 
-We provide a dataset (a development and test set) for every genre ground truth. In total, participants will be given four development datasets and all proposed models will be evaluated on four test datasets. **The goal is to create a system that uses provided music features as an input and predicts genre and subgenre labels, following genre taxonomy of each ground truth.**
+We provide a dataset (a development, validation and test set) for every genre ground truth. In total, participants will be given four development and validation datasets and all proposed models will be evaluated on four test datasets. **The goal is to create a system that uses provided music features as an input and predicts genre and subgenre labels, following genre taxonomy of each ground truth.**
 
 Importantly, annotations in the datasets are multi-label. **There may be multiple genre and subgenre annotations for the same music recording.** It is guaranteed that each recording has at least one genre label, while subgenres are not always present.
 
@@ -67,7 +67,7 @@ Participants can ensure their submission format is correct running the provided 
 
 ## Evaluation Methodology
 
-The evaluation will be carried out for each dataset separately. In particular, we will compute precision, recall and F-score as follows:
+The evaluation will be carried out for each test dataset separately. In particular, we will compute precision, recall and F-score as follows:
 
 * Per recording, all labels.
 * Per recording, only genre labels.
@@ -78,11 +78,15 @@ The evaluation will be carried out for each dataset separately. In particular, w
 
 Note that the ground truth does not necessarily contain subgenre annotations for some recordings. Therefore, only recordings containing subgenres will be considered for the evaluation on the subgenre level. An example can be found in the [summaries of random baselines](baseline/).
 
+The test datasets used for evalution of all submissions do not include any groundtruth and have been anonymized. In addition, we provide validation sets previously used as the test set in the 2017 edition of the task and now available for participants for validation as a reference for benchmarking across all current and future editions of the task.
+
+
 [Evaluation scripts](https://github.com/multimediaeval/2018-AcousticBrainz-Genre-Task/tree/master/evaluation) are provided for development (accessible to registered participants).
- 
+
+
 ## Working Notes and Overview Paper
 
-Please follow the general instructions for the working notes paper. Remember to cite the task overview paper in your working notes paper. A draft version of that paper is available here: <Link to be added when the test data is released>
+Please follow the general instructions for the working notes paper. Remember to cite the task overview paper in your working notes paper. A draft version of that paper is available [here](https://github.com/multimediaeval/2018-AcousticBrainz-Genre-Task/blob/master/latex/acousticbrainz-genre-task-me18.pdf).
  
 ## Recommended Reading
 [1] Porter, A., Bogdanov, D., Kaye, R., Tsukanov, R., Serra, X. Acousticbrainz: a community platform for gathering music information obtained from audio. In Proceedings of the 16th International Society for Music Information Retrieval Conference. Málaga, Spain, 2015, 786-792.
