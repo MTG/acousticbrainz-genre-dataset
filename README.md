@@ -86,8 +86,8 @@ The test datasets used for evalution of all submissions do not include any groun
 
 ## Working Notes and Overview Paper
 
-Please follow the general instructions for the working notes paper. Remember to cite the task overview paper in your working notes paper. A draft version of that paper is available [here](https://github.com/multimediaeval/2018-AcousticBrainz-Genre-Task/blob/master/latex/acousticbrainz-genre-task-me18.pdf).
- 
+Please follow the general instructions for the working notes paper. Remember to cite the task overview paper in your working notes paper. A draft version of that paper is available [here](https://multimediaeval.github.io/2018-AcousticBrainz-Genre-Task/latex/acousticbrainz-genre-task-me18.pdf).
+
 ## Recommended Reading
 [1] Porter, A., Bogdanov, D., Kaye, R., Tsukanov, R., Serra, X. Acousticbrainz: a community platform for gathering music information obtained from audio. In Proceedings of the 16th International Society for Music Information Retrieval Conference. Málaga, Spain, 2015, 786-792.
 
