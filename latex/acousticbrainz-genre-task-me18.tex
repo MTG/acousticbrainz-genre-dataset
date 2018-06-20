@@ -187,8 +187,8 @@ collections and submit music features to the AcousticBrainz database.
 Based on these features, additional
 metadata including genres can then be mined for recordings in the database.
 
-Since MediaEval 2017, we propose a new genre recognition task using datasets based on AcousticBrainz. This task is different from a typical genre recognition task
-in the following ways:
+Since MediaEval 2017\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/results/}},
+we have proposed a new genre recognition task using datasets based on AcousticBrainz. This task is different from a typical genre recognition task in the following ways:
 
 \begin{itemize}
 \item It allows us to explore how the same music can be annotated differently by different
@@ -330,12 +330,16 @@ frame-level data is available.
 
 \subsection{Development and Test Datasets}
 
-\hl{In total we provide four development (training+validation), four test datasets, and four additional validation sets (used as test sets in the previous edition of the task\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/results/}}) associated with the four genre ground truths.} They were created by a random split of the full data ensuring that:
+We provide four developement datasets, four validation datasets and four test
+datasets which will be used in the final evaluation of all submissions. The
+test datasets do not include any groundtruth and have been anonymized.  The
+datasets were created by a random split of the full data ensuring that:
+
 \begin{itemize}
-\item no recordings in the test sets are present in any of the development sets;
-\item no recordings in the test sets are from the same release groups (e.g., albums, singles, EPs) present in the development sets;
-\item the same genre and subgenre labels are present in both development and test sets for each ground truth;
-\item genre and subgenre labels are represented by at least 40 and 20 recordings from 6 and 3 release groups in development and test sets, respectively.
+\item no recordings appear in more than one of the above sets;
+\item no recordings in any set are from the same release groups (e.g., albums, singles, EPs) present in other sets;
+\item the same genre and subgenre labels are present in all sets for each ground truth;
+\item genre and subgenre labels are represented by at least 40 and 20 recordings from 6 and 3 release groups in development and validation/test sets, respectively.
 \end{itemize}
 
 \begin{table}[t]
@@ -360,7 +364,12 @@ frame-level data is available.
 \end{table}
 
 
-\hl{The approximate split ratios are 70\% for training, 15\% for testing. The rest 15\% of the data (following the same split principle) was previously used as test sets in the 2017 edition of the task and is now available for participants for validation as a reference for benchmarking across all current and future editions of the task.}
+The approximate split ratios of the datasets are 70\% for training, 15\% for
+validation, and 15\% for testing.  The validation dataset was previously used
+as the test set in the 2017 edition of the task and is now available for
+participants for validation as a reference for benchmarking across all current
+and future editions of the task\footnote{\url{https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/results/}}.
+
 
 
 Table~\ref{table:train_stats} provides an overview of the resulting development
