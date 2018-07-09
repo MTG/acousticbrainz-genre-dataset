@@ -37,7 +37,7 @@ We provide a dataset of music features precomputed from audio for every music re
 All music features are taken from the community-built database [AcousticBrainz](http://acousticbrainz.org) and were extracted from audio using [Essentia](http://essentia.upf.edu), an open-source library for music audio analysis [2].
 They are grouped into categories (low-level, rhythm, and tonal) and are [explained in detail here](http://essentia.upf.edu/documentation/streaming_extractor_music.html#music-descriptors). Only statistical characterization of time frames is provided (bag of features), no frame-level data is available.
 
-### Development and Test Data
+### Development, Validation and Test Data
 
 The **development data** contains:
 
@@ -50,13 +50,15 @@ The **development data** contains:
 The **test data** contains **four archives of music features for recordings with anonymized RecordingIDs**. To avoid a potential album effect [4], no recording in the test set contains music from the same release groups as the recordings in the train set.
 - Although RecordingIDs are UUIDs, they have been randomly anonymised and do not correspond to any MusicBrainz IDs on musicbrainz.org
 
+The **validation data** contains archives of muic features for recordings and the corresponding ground-truth annotations. This data was used as our test data in the 2017's edition of the task.
+
 All data is compressed with bzip2. Checksums are provided to ensure that you have correctly downloaded the archives.
 
 ### Download
 
-The development and test data for Discogs, Lastfm and Tagtraum is publicly available [here](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U).
+The development, validation and test data for Discogs, Lastfm and Tagtraum is publicly available [here](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U).
 
-The development data (genre ground truth) and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
+The development data (genre ground truth), validation and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
 
 ### Notes
 
