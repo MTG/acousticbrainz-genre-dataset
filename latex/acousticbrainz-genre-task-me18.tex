@@ -169,7 +169,7 @@ ground-truth information and datasets, and the evaluation methodology.
 \section{Introduction}
 
 Content-based music genre recognition is a popular task
-in Music Information Retrieval research~\cite{Sturm2014state}. The goal is to build systems able to predict genre and subgenre of unknown music recordings (tracks or songs)
+in Music Information Retrieval (MIR) research~\cite{Sturm2014state}. The goal is to build systems able to predict genre and subgenre of unknown music recordings (tracks or songs)
 using music features of those recordings automatically computed from audio.
 %Achieving success in the task therefore relies on building efficient machine
 %learning and audio signal processing algorithms.
@@ -427,9 +427,7 @@ The evaluation is carried out for each dataset separately. We do not use hierarc
 compute precision, recall and F-score at different levels:
 
 \begin{itemize}
-\item Per recording, all labels.
-\item Per recording, only genre labels.
-\item Per recording, only subgenre labels.
+\item Per recording: all labels, only genre labels, only subgenre labels.
 \item Per label, all recordings.
 \item Per genre label, all recordings.
 \item Per subgenre label, all recordings.
