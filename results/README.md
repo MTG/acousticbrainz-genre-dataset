@@ -1,6 +1,6 @@
 # Results
 
-The final submissions are (115 runs):
+The final submissions are (24 runs):
 
 * `baseline` (8 runs): 2 runs for task1 on all 4 datasets.
 * `fusionbaseline` (8 runs): 1 run for task1 and 1 run for task2 on all 4 datasets.
