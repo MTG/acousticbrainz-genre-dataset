@@ -6,9 +6,9 @@
 - June 1: Release of validation datasets (test datasets from [the 2017's challenge](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task)).
 - June-August: Work on algorithms
 - September: Submissions are open
-- **October 3: Final submission due**
-- **October 10: Results returned to participants**
-- October 17: Working notes paper submission due
+- **October 17: Final submission due (extented)**
+- **October 19: Results returned to participants**
+- **October 21: Working notes paper submission due**
 - October 29-31: MediaEval 2018 Workshop held near Nice, France
 
 
