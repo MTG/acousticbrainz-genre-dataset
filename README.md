@@ -1,7 +1,8 @@
 # AcousticBrainz Genre Task 2018: Content-based music genre recognition from multiple sources
 
 ## Announcements
-- Oct 29: [Evaluation Results](results/) are available for all submitted runs.
+- 29 Oct: [Evaluation Results](results/) are available for all submitted runs.
+- Read the task overview paper [here](latex/acousticbrainz-genre-task-me18.pdf).
 
 ## Tentative Task Schedule
 - June 1: Release of validation datasets (test datasets from [the 2017's challenge](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task)).
@@ -87,7 +88,7 @@ The test datasets used for evalution of all submissions do not include any groun
 
 ## Working Notes and Overview Paper
 
-Please follow the general instructions for the working notes paper. Remember to cite the task overview paper in your working notes paper. A draft version of that paper is available [here](https://multimediaeval.github.io/2018-AcousticBrainz-Genre-Task/latex/acousticbrainz-genre-task-me18.pdf).
+Please follow the general instructions for the working notes paper. Remember to cite the task overview paper in your working notes paper. The overview paper is available [here](https://multimediaeval.github.io/2018-AcousticBrainz-Genre-Task/latex/acousticbrainz-genre-task-me18.pdf).
 
 ## Recommended Reading
 [1] Porter, A., Bogdanov, D., Kaye, R., Tsukanov, R., Serra, X. Acousticbrainz: a community platform for gathering music information obtained from audio. In Proceedings of the 16th International Society for Music Information Retrieval Conference. Málaga, Spain, 2015, 786-792.
