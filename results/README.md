@@ -3,8 +3,8 @@
 The final submissions are (24 runs):
 
 * `baseline` (8 runs): 2 runs for task1 on all 4 datasets.
-* `fusionbaseline` (8 runs): 1 run for task1 and 1 run for task2 on all 4 datasets.
-* `melbaseline` (8 runs): 1 run for task1 and 1 run for task2 on all 4 datasets.
+* [`fusionbaseline`](papers/fusionbaseline-2018.pdf) (8 runs): 1 run for task1 and 1 run for task2 on all 4 datasets.
+* [`melbaseline`](papers/melbaseline-2018.pdf) (8 runs): 1 run for task1 and 1 run for task2 on all 4 datasets.
 
 For the baseline:
 
