@@ -60,6 +60,10 @@ The development, validation and test data for Discogs, Lastfm and Tagtraum is pu
 
 The development data (genre ground truth), validation and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
 
+The datasets are licensed under CC BY-NC-SA4.0 license, except for data extracted from the AllMusic database, which is released for non-commercial
+scientific research purposes only. Any publication of results based on the data extracts of the AllMusic database must cite AllMusic as the source of the data.
+
+
 ### Notes
 
 To give an idea of the scale of the data, we report some statistics for the train datasets.
