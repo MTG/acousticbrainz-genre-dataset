@@ -105,10 +105,10 @@ Please follow the general instructions for the working notes paper. Remember to 
 
 
 ## Task Organizers
-- Dmitry Bogdanov, Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
-- Alastair Porter, Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
-- Julián Urbano, Multimedia Computing Group, Delft University of Technology, Netherlands
-- Hendrik Schreiber, tagtraum industries incorporated, USA
+- [Dmitry Bogdanov](https://dbogdanov.github.io/), Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
+- [Alastair Porter](https://www.dtic.upf.edu/~aporter/), Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
+- [Julián Urbano](https://julian-urbano.info/), Multimedia Computing Group, Delft University of Technology, Netherlands
+- [Hendrik Schreiber](http://www.tagtraum.com/), tagtraum industries incorporated, USA
 
 ## Acknowledgments
 
