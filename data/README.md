@@ -63,6 +63,7 @@ The development data (genre ground truth), validation and test data for AllMusic
 The datasets are licensed under CC BY-NC-SA4.0 license, except for data extracted from the AllMusic database, which is released for non-commercial
 scientific research purposes only. Any publication of results based on the data extracts of the AllMusic database must cite AllMusic as the source of the data.
 
+The development and validation datasets are also available on Zenodo ([here](https://zenodo.org/record/2553414) and [here](https://zenodo.org/record/2554044)).
 
 ### Notes
 

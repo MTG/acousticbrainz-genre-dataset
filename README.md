@@ -1,6 +1,7 @@
 # AcousticBrainz Genre Task 2018: Content-based music genre recognition from multiple sources
 
 ## Announcements
+- Development and validation datasets are now available on Zenodo ([here](https://zenodo.org/record/2553414) and [here](https://zenodo.org/record/2554044)).
 - 29 Oct: [Evaluation Results](results/) are available for all submitted runs.
 - Read the task overview paper [here](latex/acousticbrainz-genre-task-me18.pdf).
 
