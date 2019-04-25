@@ -113,9 +113,9 @@ Please follow the general instructions for the working notes paper. Remember to 
 
 ## Acknowledgments
 
-[AcousticBrainz](https://acousticbrainz.org/), [Audio Commons](http://audiocommons.org/) and [tagtraum industries](http://www.tagtraum.com/)
+[AcousticBrainz](https://acousticbrainz.org/), [Audio Commons](http://audiocommons.org/), [tagtraum industries](http://www.tagtraum.com/) and [TROMPA](https://trompamusic.eu/)
 
-<img src="img/audio-commons-icon_64px.jpg" height="64" hspace="20"><img src="img/acousticbrainz_logo_short_horizontal.png" height="64" hspace="20"><img src="img/tagtraum_logo_small_w_g@2x.png" height="64" hspace="20">
+<img src="img/audio-commons-icon_64px.jpg" height="64" hspace="20"><img src="img/acousticbrainz_logo_short_horizontal.png" height="64" hspace="20"><img src="img/tagtraum_logo_small_w_g@2x.png" height="64" hspace="20"><img src="img/trompa-logo.png" height="64" hspace="20">
 
 This research has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreements No 688382 (AudioCommons) and 770376-2 (TROMPA), as well as the Ministry of Economy and Competitiveness of the Spanish Government 
 (Reference: TIN2015-69935-P).
