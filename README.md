@@ -29,6 +29,19 @@ Details on the genre/subgenre taxonomies and their distributions  are  reported 
 - TODO add URLs for the test set
 
 
+## Using the dataset for music genre recognition
+
+The dataset can be used within the context of the MGR task to develop systems that **predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings**.
+
+We provide four training sets and four validation sets with all data publicly available,  and four test sets with a hidden ground truth.  The training and validation sets can be used for the evaluation of MGR systems. The test sets do not include a publicly available ground truth and have anonymized MBIDs; they are reserved to be used in future MGR challenges such as MediaEval [2017](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/)/[2018](https://multimediaeval.github.io/2018-AcousticBrainz-Genre-Task/). Nevertheless, it is possible to run an evaluation on the test sets upon request.
+
+Using our data for this task may serve as an example of the development and validation of automatic annotation algorithms on complementary datasets with different taxonomies and coverage.
+
+### Baseline approach
+
+TODO https://github.com/MTG/acousticbrainz-mediaeval-baselines
+
+
 ## Citations
 If you use the MediaEval AcousticBrainz Genre dataset or part of it, please cite our ISMIR 2019 overview paper:
 
@@ -39,20 +52,12 @@ Bogdanov D, Porter A, Urbano J, Schreiber H. The MediaEval 2018 AcousticBrainz g
 ```
 
 
-## Using the dataset for music genre recognition
-
-The dataset can be used within the context of the MGR task to develop systems that **predict genre and subgenre of unknown music recordings (songs) given automatically computed features of those recordings**.
-
-We provide four training sets and four validation sets with all data publicly available,  and four test sets with a hidden ground truth.  The training and validation sets can be used for the evaluation of MGR systems. The test sets do not include a publicly available ground truth and have anonymized MBIDs; they are reserved to be used in future MGR challenges such as MediaEval [2017](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/)/[2018](https://multimediaeval.github.io/2018-AcousticBrainz-Genre-Task/). Nevertheless, it is possible to run an evaluation on the test sets upon request.
-
-Using our data for this task may serve as an example of the development and validation of automatic annotation algorithms on complementary datasets with different taxonomies and coverage.
-
-
-## Task Organizers
+## Authors
 - [Dmitry Bogdanov](https://dbogdanov.github.io/), Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
 - [Alastair Porter](https://www.dtic.upf.edu/~aporter/), Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
 - [Julián Urbano](https://julian-urbano.info/), Multimedia Computing Group, Delft University of Technology, Netherlands
 - [Hendrik Schreiber](http://www.tagtraum.com/), tagtraum industries incorporated, USA
+- [Sergio Oramas](http://sergiooramas.com/), Pandora, USA
 
 
 ## Acknowledgments
