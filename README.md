@@ -52,14 +52,6 @@ Bogdanov D, Porter A, Urbano J, Schreiber H. The MediaEval 2018 AcousticBrainz g
 ```
 
 
-## Authors
-- [Dmitry Bogdanov](https://dbogdanov.github.io/), Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
-- [Alastair Porter](https://www.dtic.upf.edu/~aporter/), Music Technology Group, Universitat Pompeu Fabra, Spain (`first.last @upf.edu`)
-- [Julián Urbano](https://julian-urbano.info/), Multimedia Computing Group, Delft University of Technology, Netherlands
-- [Hendrik Schreiber](http://www.tagtraum.com/), tagtraum industries incorporated, USA
-- [Sergio Oramas](http://sergiooramas.com/), Pandora, USA
-
-
 ## Acknowledgments
 
 [AcousticBrainz](https://acousticbrainz.org/), [Audio Commons](http://audiocommons.org/), [tagtraum industries](http://www.tagtraum.com/) and [TROMPA](https://trompamusic.eu/)
