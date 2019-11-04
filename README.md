@@ -26,7 +26,7 @@ Details on the genre/subgenre taxonomies and their distributions  are  reported 
 ## Downloads
 
 - Development and validation datasets are now available on Zenodo ([here](https://zenodo.org/record/2553414) and [here](https://zenodo.org/record/2554044)).
-- TODO add URLs for the test set
+- The test set is available upon request.
 
 
 ## Using the dataset for music genre recognition
@@ -39,16 +39,14 @@ Using our data for this task may serve as an example of the development and vali
 
 ### Baseline approach
 
-TODO https://github.com/MTG/acousticbrainz-mediaeval-baselines
+https://github.com/MTG/acousticbrainz-mediaeval-baselines
 
 
 ## Citations
-If you use the MediaEval AcousticBrainz Genre dataset or part of it, please cite our ISMIR 2019 overview paper:
+If you use the MediaEval AcousticBrainz Genre dataset or part of it, please cite our [ISMIR 2019 overview paper](http://mtg.upf.edu/node/3960):
 
 ```
-TODO new reference
-
-Bogdanov D, Porter A, Urbano J, Schreiber H. The MediaEval 2018 AcousticBrainz genre task: Content-based music genre recognition from multiple sources. Paper presented at: MediaEval'18; 2018 Oct 29-31; Sophia Antipolis, France.
+Bogdanov, D., Porter A., Schreiber H., Urbano J., & Oramas S. (2019).  The AcousticBrainz Genre Dataset: Multi-Source, Multi-Level, Multi-Label, and Large-Scale. 20th International Society for Music Information Retrieval Conference (ISMIR 2019).
 ```
 
 
