@@ -46,7 +46,9 @@ https://github.com/MTG/acousticbrainz-mediaeval-baselines
 If you use the MediaEval AcousticBrainz Genre dataset or part of it, please cite our [ISMIR 2019 overview paper](http://mtg.upf.edu/node/3960):
 
 ```
-Bogdanov, D., Porter A., Schreiber H., Urbano J., & Oramas S. (2019).  The AcousticBrainz Genre Dataset: Multi-Source, Multi-Level, Multi-Label, and Large-Scale. 20th International Society for Music Information Retrieval Conference (ISMIR 2019).
+Bogdanov, D., Porter A., Schreiber H., Urbano J., & Oramas S. (2019).
+The AcousticBrainz Genre Dataset: Multi-Source, Multi-Level, Multi-Label, and Large-Scale. 
+20th International Society for Music Information Retrieval Conference (ISMIR 2019).
 ```
 
 
