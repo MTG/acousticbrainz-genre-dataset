@@ -48,22 +48,22 @@ The **development data** contains:
 - **four archives with ground-truth genre annotations** (AllMusic, Discogs, Lastfm, Tagtraum - see format description above)
 
 The **test data** contains **four archives of music features for recordings with anonymized RecordingIDs**. To avoid a potential album effect [4], no recording in the test set contains music from the same release groups as the recordings in the train set.
-- Although RecordingIDs are UUIDs, they have been randomly anonymised and do not correspond to any MusicBrainz IDs on musicbrainz.org
+- Although RecordingIDs are UUIDs, they have been randomly anonymised and do not correspond to any MusicBrainz IDs on musicbrainz.org.
+- The associated ground truth for the test sets is hidden, but it is possible to run an evaluation upon request.
 
-The **validation data** contains archives of muic features for recordings and the corresponding ground-truth annotations. This data was used as our test data in the 2017's edition of the task.
+The **validation data** contains archives of muic features for recordings and the corresponding ground-truth annotations. This data was used as our test data in the [2017's edition of the MediaEval task](https://multimediaeval.github.io/2017-AcousticBrainz-Genre-Task/results/).
 
 All data is compressed with bzip2. Checksums are provided to ensure that you have correctly downloaded the archives.
 
 ### Download
 
-The development, validation and test data for Discogs, Lastfm and Tagtraum is publicly available [here](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U).
+The development and validation datasets are available on Zenodo ([here](https://zenodo.org/record/2553414) or [Google Drive](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U). Test datasets are available upon request. 
 
-The development data (genre ground truth), validation and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
+All the data for Discogs, Lastfm and Tagtraum is publicly open, while the development data (genre ground truth), validation and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
 
 The datasets are licensed under CC BY-NC-SA4.0 license, except for data extracted from the AllMusic database, which is released for non-commercial
 scientific research purposes only. Any publication of results based on the data extracts of the AllMusic database must cite AllMusic as the source of the data.
 
-The development and validation datasets are also available on Zenodo ([here](https://zenodo.org/record/2553414) and [here](https://zenodo.org/record/2554044)).
 
 ### Notes
 

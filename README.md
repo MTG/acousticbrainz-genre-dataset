@@ -25,7 +25,7 @@ Details on the genre/subgenre taxonomies and their distributions  are  reported 
 
 ## Downloads
 
-- Development and validation datasets are now available on Zenodo ([here](https://zenodo.org/record/2553414) and [here](https://zenodo.org/record/2554044)).
+- Development and validation datasets are available on Zenodo ([here](https://zenodo.org/record/2553414) and [here](https://zenodo.org/record/2554044)) as well as on [Google Drive](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U).
 - The test set is available upon request.
 
 
