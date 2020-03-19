@@ -39,7 +39,7 @@ Using our data for this task may serve as an example of the development and vali
 
 ### Baseline approach
 
-https://github.com/MTG/acousticbrainz-mediaeval-baselines
+The code for baseline approach is available in [this repository](https://github.com/MTG/acousticbrainz-mediaeval-baselines).
 
 
 ## Citations
