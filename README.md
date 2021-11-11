@@ -43,7 +43,7 @@ The code for baseline approach is available in [this repository](https://github.
 
 
 ## Citations
-If you use the MediaEval AcousticBrainz Genre dataset or part of it, please cite our [ISMIR 2019 overview paper](http://mtg.upf.edu/node/3960):
+If you use the MediaEval AcousticBrainz Genre dataset or part of it, please cite our [ISMIR 2019 overview paper](http://hdl.handle.net/10230/32931):
 
 ```
 Bogdanov, D., Porter A., Schreiber H., Urbano J., & Oramas S. (2019).
