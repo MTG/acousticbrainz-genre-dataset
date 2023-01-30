@@ -57,7 +57,7 @@ All data is compressed with bzip2. Checksums are provided to ensure that you hav
 
 ### Download
 
-The development and validation datasets are available on Zenodo ([here](https://zenodo.org/record/2553414) or [Google Drive](https://drive.google.com/open?id=0B8wz5KkuLnI3RjFYSFY5TkJVU1U). Test datasets are available upon request. 
+The development and validation datasets are available on Zenodo ([here](https://zenodo.org/record/2553414) or [Google Drive](https://drive.google.com/drive/folders/0B8wz5KkuLnI3RjFYSFY5TkJVU1U?resourcekey=0-guMxMfurhIbZR6fY2ZDnIw&usp=sharing). Test datasets are available upon request. 
 
 All the data for Discogs, Lastfm and Tagtraum is publicly open, while the development data (genre ground truth), validation and test data for AllMusic requires signing the **Data Usage agreement** by participants. The data will be shared to the participants in personal communication (please, ask the organizers).
 
@@ -74,28 +74,28 @@ AllMusic:
 - 1353213 recordings by 163654 releasegroups
 - 21 genres, 745 subgenres
 - 1.33 genres and 3.15 subgenres per recording on average
-- [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpMzZkUVVjUnItUHM)
+- [genre/subgenre distribution](https://drive.google.com/file/d/0B9efYsv7Y7gpMzZkUVVjUnItUHM/view?resourcekey=0-W_uJmsyBLypL3dS54Hif_Q)
 
 Discogs:
 
 - 904944 recordings by 118475 releasegroups
 - 15 genres, 300 subgenres
 - 1.37 genres and 1.69 subgenres per recording on average
-- [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpZUFSYjlJaXJhbVk)
+- [genre/subgenre distribution](https://drive.google.com/file/d/0B9efYsv7Y7gpZUFSYjlJaXJhbVk/view?resourcekey=0-BvM_TN6hGhT1A0unA_rw4g)
 
 Lastfm:
 
 - 566710 recordings by 115161 releasegroups
 - 30 genres, 297 subgenres
 - 1.14 genres and 1.28 subgenres per recordings on average
-- [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpRGh6NEdIMVJ3Rk0)
+- [genre/subgenre distribution](https://drive.google.com/file/d/0B9efYsv7Y7gpRGh6NEdIMVJ3Rk0/view?resourcekey=0-eL0JFgPHg4aJ5mXJfCdrMg)
 
 Tagtraum:
 
 - 486740 recordings by 69025 releasegroups
 - 31 genres, 265 subgenres
 - 1.13 genres and 1.72 subgenres per recording on average
-- [genre/subgenre distribution](https://drive.google.com/open?id=0B9efYsv7Y7gpSTZyeXlQREhsOWc)
+- [genre/subgenre distribution](https://drive.google.com/file/d/0B9efYsv7Y7gpSTZyeXlQREhsOWc/view?resourcekey=0-7_o3WnkXUQPspLmwYZJZTA)
 
 Genre/subgenre taxonomy and distribution in terms of recordings and releasegroups for all four development datasets are reported [here](../data_stats/).
 
